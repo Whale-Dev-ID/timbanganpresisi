@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <!-- ============================================================
+       PAGE TEMPLATE — TimbanganPresisi.com
+       Referensi skeleton untuk SEMUA halaman. Page builder lain
+       menyalin bagian HEADER dan FOOTER di bawah ini VERBATIM
+       (jangan ubah markup, class, atau urutan elemen).
+       Ganti hanya bagian yang ditandai SLOT.
+       ============================================================ -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SLOT: title — unik per halaman, format "Keyword Utama | TimbanganPresisi.com" -->
+  <title>SLOT_TITLE | TimbanganPresisi.com</title>
+
+  <!-- SLOT: meta description — unik per halaman, 140–160 karakter -->
+  <meta name="description" content="SLOT_META_DESCRIPTION">
+
+  <!-- SLOT: canonical — URL absolut halaman ini -->
+  <link rel="canonical" href="https://timbanganpresisi.com/SLOT_PATH/">
+
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="TimbanganPresisi.com">
+  <!-- SLOT: OG per halaman -->
+  <meta property="og:title" content="SLOT_OG_TITLE">
+  <meta property="og:description" content="SLOT_OG_DESCRIPTION">
+  <meta property="og:url" content="https://timbanganpresisi.com/SLOT_PATH/">
+  <meta property="og:image" content="https://timbanganpresisi.com/SLOT_OG_IMAGE">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Font: IBM Plex Sans (400/500/600/700).
+       DILARANG: Inter, Roboto, Fraunces, Geist, Plus Jakarta Sans, Space Grotesk. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Satu CSS untuk semua halaman -->
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/img/favicon.svg">
+
+  <!-- SLOT: JSON-LD — Product + FAQPage + BreadcrumbList per pola halaman existing -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "SLOT_JSONLD_NAME",
+    "url": "https://timbanganpresisi.com/SLOT_PATH/"
+  }
+  </script>
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Lewati ke konten utama</a>
+
+  <!-- ============================================================
+       HEADER — VERBATIM. Salin persis ke semua halaman.
+       Aturan: tambahkan class "is-active" pada <a> nav yang sesuai
+       halaman aktif. Jangan ubah teks, href, atau urutan.
+       ============================================================ -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a class="brand" href="/">Timbangan<span>Presisi</span></a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Buka menu navigasi">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Navigasi utama">
+        <a href="/software-timbangan/">Software Timbangan</a>
+        <a href="/#perangkat">Perangkat Timbangan</a>
+        <a href="/blog/">Blog</a>
+        <a href="/tentang-kami/">About Us</a>
+        <a class="btn btn-wa btn-sm" href="https://wa.me/6281916364503" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Konsultasi Gratis
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============================================================
+         CONTOH KOMPONEN (demo referensi — hapus/ganti dengan konten
+         halaman asli). Semua class di bawah tersedia di style.css.
+         ============================================================ -->
+
+    <!-- Kepala halaman: H1 = keyword utama -->
+    <div class="page-head">
+      <div class="container">
+        <h1>Judul Halaman (H1 = Keyword Utama)</h1>
+        <p>Paragraf pembuka 1–2 kalimat yang memuat keyword dan menjelaskan isi halaman.</p>
+      </div>
+    </div>
+
+    <!-- Katalog produk -->
+    <section class="section section--tight">
+      <div class="container">
+        <h2 class="section-title">Katalog Produk</h2>
+        <p class="section-lead">Paragraf pengantar section, maksimal ~2 baris.</p>
+        <div class="product-grid">
+          <article class="product-card">
+            <div class="product-card__media">
+              <img src="/img/jto-pro/dashboard.jpg" alt="Screenshot dashboard Whale JTO Pro" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="badge">Enterprise</span>
+              <h3 class="product-card__title"><a href="/jto-pro/">Whale JTO Pro</a></h3>
+              <p class="product-card__desc">Deskripsi 2 kalimat: untuk siapa dan keunggulan utamanya.</p>
+              <div class="product-card__actions">
+                <a class="btn btn-primary btn-sm" href="/jto-pro/">Lihat Detail</a>
+                <a class="btn btn-wa btn-sm" href="https://wa.me/6281916364503?text=Halo%2C%20saya%20ingin%20tanya%20tentang%20Whale%20JTO%20Pro" target="_blank" rel="noopener">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                  Tanya via WA
+                </a>
+              </div>
+            </div>
+          </article>
+          <!-- Kartu produk lain: salin <article class="product-card"> di atas -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Fitur: daftar centang SVG -->
+    <section class="section section--alt">
+      <div class="container">
+        <h2 class="section-title">Fitur Utama</h2>
+        <p class="section-lead">3–4 fitur kunci yang paling dicari buyer.</p>
+        <ul class="feature-list">
+          <li><strong>Nama fitur</strong><small>Penjelasan satu baris.</small></li>
+          <li><strong>Nama fitur</strong><small>Penjelasan satu baris.</small></li>
+          <li><strong>Nama fitur</strong><small>Penjelasan satu baris.</small></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Placeholder screenshot yang belum tersedia -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Tampilan Aplikasi</h2>
+        <p class="section-lead">Screenshot asli aplikasi &amp; lapangan. Tanpa gambar AI.</p>
+        <div class="placeholder-panel" role="img" aria-label="Screenshot Whale JTO Standard segera tersedia">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+          <strong>Screenshot: Whale JTO Standard</strong>
+          <small>Foto/screenshot asli sedang disiapkan — segera tersedia.</small>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tabel perbandingan: bungkus SELALU dengan .table-scroll -->
+    <section class="section section--alt">
+      <div class="container">
+        <h2 class="section-title">Perbandingan Varian</h2>
+        <div class="table-scroll">
+          <table class="compare-table">
+            <thead>
+              <tr>
+                <th scope="col">Fitur</th>
+                <th scope="col">JTO Standard</th>
+                <th scope="col">JTO Pro</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Database</th>
+                <td>SQLite lokal</td>
+                <td>PostgreSQL terpusat</td>
+              </tr>
+              <tr>
+                <th scope="row">CCTV</th>
+                <td>—</td>
+                <td class="yes">Live view up to 4 kamera</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Pertanyaan Umum</h2>
+        <div class="faq">
+          <details>
+            <summary>Pertanyaan pertama?</summary>
+            <div class="faq-body">
+              <p>Jawaban singkat dan jujur, tanpa overclaim.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Pertanyaan kedua?</summary>
+            <div class="faq-body">
+              <p>Jawaban singkat dan jujur, tanpa overclaim.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER — VERBATIM. Salin persis ke semua halaman.
+       ============================================================ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="/">Timbangan<span>Presisi</span></a>
+          <p>Software timbangan untuk pabrik, tambang, dan perkebunan Indonesia: jembatan timbang, check weighing, POS timbangan, dan integrasi loadcell.</p>
+        </div>
+        <nav class="footer-col" aria-label="Produk">
+          <h2>Produk</h2>
+          <ul>
+            <li><a href="/jto-pro/">Whale JTO Pro</a></li>
+            <li><a href="/jto-standard/">Whale JTO Standard</a></li>
+            <li><a href="/jto-smart-scanner/">Whale JTO Smart Scanner</a></li>
+            <li><a href="/jto-multi-item/">Whale JTO Multi Item</a></li>
+            <li><a href="/whale-cwo/">Whale CWO</a></li>
+            <li><a href="/pos-timbangan/">Whale POS</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-col" aria-label="Laman">
+          <h2>Laman</h2>
+          <ul>
+            <li><a href="/software-jembatan-timbang/">Jembatan Timbang</a></li>
+            <li><a href="/software-timbangan/">Software Timbangan</a></li>
+            <li><a href="/pos-timbangan/">POS Timbangan</a></li>
+            <li><a href="/barcode-timbangan/">Barcode</a></li>
+            <li><a href="/integrasi-loadcell/">Integrasi Loadcell</a></li>
+            <li><a href="/blog/">Blog</a>
+        <a href="/tentang-kami/">About Us</a></li>
+          </ul>
+        </nav>
+        <div class="footer-col" id="kontak">
+          <h2>Hubungi Kami</h2>
+          <ul>
+            <li>
+              <a class="footer-contact" href="https://wa.me/6281916364503" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                WA 6281916364503
+              </a>
+            </li>
+            <li>
+              <a class="footer-contact" href="mailto:info@timbanganpresisi.com">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+                info@timbanganpresisi.com
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        © 2026 PT Sentra Solusi Presisi · TimbanganPresisi.com
+      </div>
+    </div>
+  </footer>
+
+  <!-- Tombol WA mengambang — VERBATIM di semua halaman -->
+  <a class="wa-float" href="https://wa.me/6281916364503" target="_blank" rel="noopener" aria-label="Chat WhatsApp">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+  </a>
+
+  <!-- Script nav mobile — VERBATIM di semua halaman -->
+  <script>
+    (function () {
+      var header = document.getElementById('site-header');
+      var toggle = document.getElementById('nav-toggle');
+      toggle.addEventListener('click', function () {
+        var open = header.classList.toggle('nav-open');
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        toggle.setAttribute('aria-label', open ? 'Tutup menu navigasi' : 'Buka menu navigasi');
+      });
+    })();
+  </script>
+
+</body>
+</html>

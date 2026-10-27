@@ -3,17 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Software Timbangan Digital untuk Gudang & Pabrik | TimbanganPresisi</title>
+  <title>Software Timbangan Digital untuk Gudang &amp; Pabrik | TimbanganPresisi</title>
   <meta name="description" content="Software timbangan digital terintegrasi untuk gudang, pabrik, dan distributor. Otomatis catat data penimbangan, laporan real-time, integrasi ERP. Konsultasi gratis.">
   <link rel="canonical" href="https://www.timbanganpresisi.com/software-timbangan/">
-  <meta property="og:title" content="Software Timbangan Digital untuk Gudang & Pabrik">
-  <meta property="og:description" content="Otomatis catat data penimbangan, laporan real-time, integrasi ERP. Setup 1 hari.">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="TimbanganPresisi.com">
+  <meta property="og:title" content="Software Timbangan Digital untuk Gudang &amp; Pabrik">
+  <meta property="og:description" content="Otomatis catat data penimbangan, laporan real-time, integrasi ERP. Setup 1 hari.">
   <meta property="og:url" content="https://www.timbanganpresisi.com/software-timbangan/">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Font: IBM Plex Sans (400/500/600/700) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Satu CSS untuk semua halaman -->
   <link rel="stylesheet" href="/css/style.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/img/favicon.svg">
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -50,105 +63,258 @@
 </head>
 <body>
 
-<header class="site-header">
-  <div class="header-inner">
-    <a class="site-logo" href="/">Timbangan<span>Presisi</span></a>
-    <button class="nav-toggle" onclick="document.querySelector('.main-nav').classList.toggle('active')" aria-label="Toggle menu">☰</button>
-    <nav class="main-nav">
-      <a href="/software-timbangan/">Software Timbangan</a>
-      <a href="/integrasi-loadcell/">Integrasi Loadcell</a>
-      <a href="/pos-timbangan/">POS Timbangan</a>
-      <a href="/software-jembatan-timbang/">Jembatan Timbang</a>
-      <a class="nav-cta" href="https://wa.me/6281916364503?text=Halo%2C%20saya%20ingin%20konsultasi%20tentang%20software%20timbangan">💬 Konsultasi Gratis</a>
-    </nav>
-  </div>
-</header>
+  <a class="skip-link" href="#main">Lewati ke konten utama</a>
 
-<main class="page-content">
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a class="brand" href="/">Timbangan<span>Presisi</span></a>
 
-<div class="lp-hero">
-  <h1>Software Timbangan Digital untuk Gudang &amp; Pabrik</h1>
-  <p>Catat, simpan, dan kelola data penimbangan secara otomatis. Terintegrasi langsung dengan timbangan, ERP, dan sistem inventory Anda.</p>
-  <a href="https://wa.me/6281916364503?text=Halo%2C%20saya%20tertarik%20dengan%20software%20timbangan">💬 Konsultasi Gratis</a>
-</div>
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Buka menu navigasi">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-<div class="lp-badges">
-  <span>🔌 Terhubung ke semua merk indikator</span>
-  <span>📋 Tiket timbang dengan audit trail</span>
-  <span>⚙️ Konfigurasi fleksibel per kebutuhan</span>
-  <span>📊 Laporan real-time tanpa input ulang</span>
-</div>
+      <nav class="main-nav" id="main-nav" aria-label="Navigasi utama">
+        <a href="/software-timbangan/" class="is-active">Software Timbangan</a>
+        <a href="/#perangkat">Perangkat Timbangan</a>
+        <a href="/blog/">Blog</a>
+        <a href="/tentang-kami/">About Us</a>
+        <a class="btn btn-wa btn-sm" href="https://wa.me/6281916364503" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Konsultasi Gratis
+        </a>
+      </nav>
+    </div>
+  </header>
 
-<h2>Masalah yang Sering Terjadi Tanpa Software Timbangan</h2>
-<ul>
-  <li>Pencatatan manual rawan salah tulis dan manipulasi data</li>
-  <li>Tidak ada rekap otomatis — harus input ulang ke Excel</li>
-  <li>Sulit melacak riwayat penimbangan per customer atau produk</li>
-  <li>Data tidak real-time, owner tidak bisa pantau dari jauh</li>
-  <li>Timbangan berdiri sendiri, tidak terhubung ke sistem apapun</li>
-</ul>
+  <main id="main">
 
-<h2>Solusi: Software Timbangan TimbanganPresisi</h2>
-<p>Software kami menghubungkan timbangan langsung ke komputer dan database. Setiap penimbangan otomatis tercatat, tersimpan, dan bisa diakses kapan saja.</p>
+    <div class="page-head">
+      <div class="container">
+        <h1>Software Timbangan Digital untuk Gudang &amp; Pabrik</h1>
+        <p>Catat, simpan, dan kelola data penimbangan secara otomatis. Terintegrasi langsung dengan timbangan, ERP, dan sistem inventory Anda.</p>
+        <p>
+          <a class="btn btn-wa" href="https://wa.me/6281916364503?text=Halo%2C%20saya%20tertarik%20dengan%20software%20timbangan" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Konsultasi Gratis
+          </a>
+        </p>
+        <p>
+          <span class="badge">Terhubung ke semua merk indikator</span>
+          <span class="badge">Tiket timbang dengan audit trail</span>
+          <span class="badge">Konfigurasi fleksibel per kebutuhan</span>
+          <span class="badge">Laporan real-time tanpa input ulang</span>
+        </p>
+      </div>
+    </div>
 
-<h2>Fitur Utama</h2>
-<div class="lp-grid">
-  <div class="lp-grid-item"><strong>⚡ Pembacaan Otomatis</strong><span>Data berat langsung masuk ke sistem tanpa input manual.</span></div>
-  <div class="lp-grid-item"><strong>📊 Laporan Real-Time</strong><span>Lihat rekap harian, mingguan, bulanan secara instan.</span></div>
-  <div class="lp-grid-item"><strong>🔗 Integrasi ERP</strong><span>Terhubung ke SAP, Accurate, Jurnal, atau sistem custom Anda.</span></div>
-  <div class="lp-grid-item"><strong>🖨️ Cetak Tiket &amp; Label</strong><span>Print tiket timbang dan label barcode otomatis.</span></div>
-  <div class="lp-grid-item"><strong>👥 Multi User &amp; Role</strong><span>Atur hak akses berdasarkan jabatan (operator, admin, owner).</span></div>
-  <div class="lp-grid-item"><strong>🗄️ Database Terpusat</strong><span>Semua data tersimpan di satu tempat, aman dan terbackup.</span></div>
-</div>
+    <section class="section section--alt">
+      <div class="container">
+        <h2 class="section-title">Masalah yang Sering Terjadi Tanpa Software Timbangan</h2>
+        <div class="prose">
+          <ul>
+            <li>Pencatatan manual rawan salah tulis dan manipulasi data</li>
+            <li>Tidak ada rekap otomatis — harus input ulang ke Excel</li>
+            <li>Sulit melacak riwayat penimbangan per customer atau produk</li>
+            <li>Data tidak real-time, owner tidak bisa pantau dari jauh</li>
+            <li>Timbangan berdiri sendiri, tidak terhubung ke sistem apapun</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-<h2>Cocok untuk Industri</h2>
-<div class="lp-tags">
-  <span>Gudang</span><span>Pabrik</span><span>Distributor</span><span>Retail</span><span>Tambang</span><span>Logistik</span>
-</div>
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Solusi: Software Timbangan TimbanganPresisi</h2>
+        <div class="prose">
+          <p>Software kami menghubungkan timbangan langsung ke komputer dan database. Setiap penimbangan otomatis tercatat, tersimpan, dan bisa diakses kapan saja.</p>
+        </div>
+      </div>
+    </section>
 
-<h2>Cara Kerja</h2>
-<ol>
-  <li><strong>Koneksi</strong> — Timbangan dihubungkan ke komputer via serial/USB/TCP</li>
-  <li><strong>Konfigurasi</strong> — Setup produk, customer, dan parameter penimbangan</li>
-  <li><strong>Operasi</strong> — Operator tinggal klik, data otomatis tercatat</li>
-  <li><strong>Laporan</strong> — Owner dan manager akses laporan real-time</li>
-</ol>
+    <section class="section section--alt">
+      <div class="container">
+        <h2 class="section-title">Fitur Utama</h2>
+        <ul class="feature-list">
+          <li><strong>Pembacaan Otomatis</strong><small>Data berat langsung masuk ke sistem tanpa input manual.</small></li>
+          <li><strong>Laporan Real-Time</strong><small>Lihat rekap harian, mingguan, bulanan secara instan.</small></li>
+          <li><strong>Integrasi ERP</strong><small>Terhubung ke SAP, Accurate, Jurnal, atau sistem custom Anda.</small></li>
+          <li><strong>Cetak Tiket &amp; Label</strong><small>Print tiket timbang dan label barcode otomatis.</small></li>
+          <li><strong>Multi User &amp; Role</strong><small>Atur hak akses berdasarkan jabatan (operator, admin, owner).</small></li>
+          <li><strong>Database Terpusat</strong><small>Semua data tersimpan di satu tempat, aman dan terbackup.</small></li>
+        </ul>
+      </div>
+    </section>
 
-<div class="lp-testimonial">
-  <p>"Sejak pakai software ini, error pencatatan turun 95%. Laporan langsung jadi tanpa perlu input ulang ke Excel. Sangat membantu operasional gudang kami."</p>
-  <cite>— Manager Gudang, PT. Distributor Nasional</cite>
-</div>
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Cocok untuk Industri</h2>
+        <p>
+          <span class="badge">Gudang</span>
+          <span class="badge">Pabrik</span>
+          <span class="badge">Distributor</span>
+          <span class="badge">Retail</span>
+          <span class="badge">Tambang</span>
+          <span class="badge">Logistik</span>
+        </p>
+      </div>
+    </section>
 
-<div class="lp-faq">
-  <h2>FAQ - Pertanyaan Umum</h2>
-  <div class="lp-faq-item"><strong>Apa itu software timbangan digital?</strong><p>Software timbangan digital adalah program komputer yang terhubung langsung ke perangkat timbangan (loadcell/indicator) untuk mencatat, menyimpan, dan mengelola data penimbangan secara otomatis dan akurat.</p></div>
-  <div class="lp-faq-item"><strong>Apakah software timbangan bisa terhubung ke ERP?</strong><p>Ya. Software kami mendukung integrasi dengan berbagai sistem ERP melalui API, database sharing, atau file export (CSV/Excel). Termasuk integrasi dengan SAP, Accurate, dan Jurnal.</p></div>
-  <div class="lp-faq-item"><strong>Berapa lama proses instalasi?</strong><p>Untuk kebutuhan standar, instalasi dapat selesai dalam 1 hari kerja. Untuk sistem custom dengan integrasi kompleks, biasanya membutuhkan 3-7 hari kerja termasuk testing.</p></div>
-  <div class="lp-faq-item"><strong>Merk timbangan apa saja yang didukung?</strong><p>Kami mendukung hampir semua merk: AND, Ohaus, CAS, Mettler Toledo, Excell, GSC, Sonic, dan lainnya. Komunikasi via RS232, RS485, USB, dan TCP/IP.</p></div>
-  <div class="lp-faq-item"><strong>Apakah ada versi trial atau demo?</strong><p>Ya, kami menyediakan demo gratis dan konsultasi tanpa biaya. Hubungi kami via WhatsApp untuk menjadwalkan demo sesuai kebutuhan Anda.</p></div>
-</div>
+    <section class="section section--alt">
+      <div class="container">
+        <h2 class="section-title">Cara Kerja</h2>
+        <div class="prose">
+          <ol>
+            <li><strong>Koneksi</strong> — Timbangan dihubungkan ke komputer via serial/USB/TCP</li>
+            <li><strong>Konfigurasi</strong> — Setup produk, customer, dan parameter penimbangan</li>
+            <li><strong>Operasi</strong> — Operator tinggal klik, data otomatis tercatat</li>
+            <li><strong>Laporan</strong> — Owner dan manager akses laporan real-time</li>
+          </ol>
+        </div>
+      </div>
+    </section>
 
-<h2>Kesimpulan</h2>
-<p>Software timbangan digital adalah investasi penting untuk bisnis yang mengandalkan penimbangan. Dengan otomatisasi pencatatan, integrasi sistem, dan laporan real-time, Anda bisa mengurangi human error, meningkatkan efisiensi, dan mengambil keputusan berdasarkan data akurat.</p>
+    <section class="section section--tight">
+      <div class="container">
+        <div class="prose">
+          <blockquote>
+            <p>"Sejak pakai software ini, error pencatatan turun 95%. Laporan langsung jadi tanpa perlu input ulang ke Excel. Sangat membantu operasional gudang kami."</p>
+            <p>— Manager Gudang, PT. Distributor Nasional</p>
+          </blockquote>
+        </div>
+      </div>
+    </section>
 
-<div class="lp-cta">
-  <h2>Siap Tingkatkan Efisiensi Penimbangan Anda?</h2>
-  <p>Konsultasi gratis dengan tim kami. Tanpa komitmen.</p>
-  <a href="https://wa.me/6281916364503?text=Halo%2C%20saya%20tertarik%20dengan%20software%20timbangan%20untuk%20bisnis%20saya">💬 Request Demo Gratis</a>
-</div>
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">FAQ - Pertanyaan Umum</h2>
+        <div class="faq">
+          <details>
+            <summary>Apa itu software timbangan digital?</summary>
+            <div class="faq-body">
+              <p>Software timbangan digital adalah program komputer yang terhubung langsung ke perangkat timbangan (loadcell/indicator) untuk mencatat, menyimpan, dan mengelola data penimbangan secara otomatis dan akurat.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Apakah software timbangan bisa terhubung ke ERP?</summary>
+            <div class="faq-body">
+              <p>Ya. Software kami mendukung integrasi dengan berbagai sistem ERP melalui API, database sharing, atau file export (CSV/Excel). Termasuk integrasi dengan SAP, Accurate, dan Jurnal.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Berapa lama proses instalasi?</summary>
+            <div class="faq-body">
+              <p>Untuk kebutuhan standar, instalasi dapat selesai dalam 1 hari kerja. Untuk sistem custom dengan integrasi kompleks, biasanya membutuhkan 3-7 hari kerja termasuk testing.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Merk timbangan apa saja yang didukung?</summary>
+            <div class="faq-body">
+              <p>Kami mendukung hampir semua merk: AND, Ohaus, CAS, Mettler Toledo, Excell, GSC, Sonic, dan lainnya. Komunikasi via RS232, RS485, USB, dan TCP/IP.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Apakah ada versi trial atau demo?</summary>
+            <div class="faq-body">
+              <p>Ya, kami menyediakan demo gratis dan konsultasi tanpa biaya. Hubungi kami via WhatsApp untuk menjadwalkan demo sesuai kebutuhan Anda.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
 
-</main>
+    <section class="section section--alt">
+      <div class="container">
+        <h2 class="section-title">Kesimpulan</h2>
+        <div class="prose">
+          <p>Software timbangan digital adalah investasi penting untuk bisnis yang mengandalkan penimbangan. Dengan otomatisasi pencatatan, integrasi sistem, dan laporan real-time, Anda bisa mengurangi human error, meningkatkan efisiensi, dan mengambil keputusan berdasarkan data akurat.</p>
+        </div>
+      </div>
+    </section>
 
-<footer class="site-footer">
-  <div class="footer-grid">
-    <div class="footer-col"><h4>TimbanganPresisi</h4><p>Solusi software timbangan digital terintegrasi untuk industri Indonesia.</p></div>
-    <div class="footer-col"><h4>Produk</h4><a href="/software-timbangan/">Software Timbangan</a><a href="/integrasi-loadcell/">Integrasi Loadcell</a><a href="/pos-timbangan/">POS Timbangan</a><a href="/software-jembatan-timbang/">Jembatan Timbang</a><a href="/barcode-timbangan/">Barcode Timbangan</a></div>
-    <div class="footer-col"><h4>Industri</h4><a href="#">Gudang &amp; Logistik</a><a href="#">Pabrik &amp; Manufaktur</a><a href="#">Retail &amp; Toko</a><a href="#">Distributor</a></div>
-    <div class="footer-col"><h4>Hubungi Kami</h4><a href="https://wa.me/6281916364503">💬 WhatsApp</a><a href="mailto:info@timbanganpresisi.com">📧 Email</a></div>
-  </div>
-  <div class="footer-bottom">© 2025 TimbanganPresisi.com. All rights reserved.</div>
-</footer>
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Siap Tingkatkan Efisiensi Penimbangan Anda?</h2>
+        <p class="section-lead">Konsultasi gratis dengan tim kami. Tanpa komitmen.</p>
+        <a class="btn btn-wa" href="https://wa.me/6281916364503?text=Halo%2C%20saya%20tertarik%20dengan%20software%20timbangan%20untuk%20bisnis%20saya" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Request Demo Gratis
+        </a>
+      </div>
+    </section>
 
-<a class="wa-float" href="https://wa.me/6281916364503?text=Halo%2C%20saya%20ingin%20konsultasi%20tentang%20software%20timbangan" aria-label="Chat WhatsApp" target="_blank" rel="noopener">💬</a>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="/">Timbangan<span>Presisi</span></a>
+          <p>Software timbangan untuk pabrik, tambang, dan perkebunan Indonesia: jembatan timbang, check weighing, POS timbangan, dan integrasi loadcell.</p>
+        </div>
+        <nav class="footer-col" aria-label="Produk">
+          <h2>Produk</h2>
+          <ul>
+            <li><a href="/jto-pro/">Whale JTO Pro</a></li>
+            <li><a href="/jto-standard/">Whale JTO Standard</a></li>
+            <li><a href="/jto-smart-scanner/">Whale JTO Smart Scanner</a></li>
+            <li><a href="/jto-multi-item/">Whale JTO Multi Item</a></li>
+            <li><a href="/whale-cwo/">Whale CWO</a></li>
+            <li><a href="/pos-timbangan/">Whale POS</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-col" aria-label="Laman">
+          <h2>Laman</h2>
+          <ul>
+            <li><a href="/software-jembatan-timbang/">Jembatan Timbang</a></li>
+            <li><a href="/software-timbangan/">Software Timbangan</a></li>
+            <li><a href="/pos-timbangan/">POS Timbangan</a></li>
+            <li><a href="/barcode-timbangan/">Barcode</a></li>
+            <li><a href="/integrasi-loadcell/">Integrasi Loadcell</a></li>
+            <li><a href="/blog/">Blog</a>
+        <a href="/tentang-kami/">About Us</a></li>
+          </ul>
+        </nav>
+        <div class="footer-col" id="kontak">
+          <h2>Hubungi Kami</h2>
+          <ul>
+            <li>
+              <a class="footer-contact" href="https://wa.me/6281916364503" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                WA 6281916364503
+              </a>
+            </li>
+            <li>
+              <a class="footer-contact" href="mailto:info@timbanganpresisi.com">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+                info@timbanganpresisi.com
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        © 2026 PT Sentra Solusi Presisi · TimbanganPresisi.com
+      </div>
+    </div>
+  </footer>
+
+  <a class="wa-float" href="https://wa.me/6281916364503" target="_blank" rel="noopener" aria-label="Chat WhatsApp">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+  </a>
+
+  <script>
+    (function () {
+      var header = document.getElementById('site-header');
+      var toggle = document.getElementById('nav-toggle');
+      toggle.addEventListener('click', function () {
+        var open = header.classList.toggle('nav-open');
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        toggle.setAttribute('aria-label', open ? 'Tutup menu navigasi' : 'Buka menu navigasi');
+      });
+    })();
+  </script>
+
 </body>
 </html>

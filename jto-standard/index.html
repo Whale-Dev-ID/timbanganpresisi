@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Software Jembatan Timbang | TimbanganPresisi.com</title>
+
+  <meta name="description" content="Whale JTO Standard: software jembatan timbang untuk timbang masuk/keluar/biasa. 100% offline, label fleksibel, trial 99 transaksi. Konsultasi gratis.">
+
+  <link rel="canonical" href="https://www.timbanganpresisi.com/jto-standard/">
+
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="TimbanganPresisi.com">
+  <meta property="og:title" content="Whale JTO Standard — Software Jembatan Timbang Desktop">
+  <meta property="og:description" content="Software jembatan timbang desktop untuk operasional harian: 3 mode transaksi, label fleksibel, koneksi indikator universal, 100% offline.">
+  <meta property="og:url" content="https://www.timbanganpresisi.com/jto-standard/">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Font: IBM Plex Sans (400/500/600/700).
+       DILARANG: Inter, Roboto, Fraunces, Geist, Plus Jakarta Sans, Space Grotesk. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Satu CSS untuk semua halaman -->
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/img/favicon.svg">
+
+  <!-- JSON-LD: Product -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Whale JTO Standard",
+    "description": "Software jembatan timbang desktop untuk operasional timbang masuk/keluar/biasa harian. Label transaksi fleksibel, koneksi indikator universal via Serial/COM, berjalan 100% offline.",
+    "brand": { "@type": "Brand", "name": "Whale" },
+    "url": "https://www.timbanganpresisi.com/jto-standard/"
+  }
+  </script>
+  <!-- JSON-LD: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Apakah Whale JTO Standard butuh koneksi internet?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Tidak. Aplikasi berjalan 100% offline: database SQLite tersimpan lokal di komputer, dan aktivasi lisensi pun dilakukan offline via RSA." }
+      },
+      {
+        "@type": "Question",
+        "name": "Apakah ada masa trial?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Ada. Anda bisa memakai penuh hingga 99 transaksi selesai tanpa lisensi. Setelah itu, aktivasi lisensi offline berbasis RSA." }
+      },
+      {
+        "@type": "Question",
+        "name": "Indikator timbangan merk apa saja yang didukung?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Koneksi universal via Serial/COM — kompatibel dengan AND, Ohaus, CAS, Mettler Toledo, Excell, dan lainnya." }
+      },
+      {
+        "@type": "Question",
+        "name": "Apakah label mode dan field transaksi bisa diubah?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Bisa. Admin mengubah label mode transaksi dan 8 field netral langsung dari aplikasi, tanpa mengubah struktur database maupun logika transaksi." }
+      },
+      {
+        "@type": "Question",
+        "name": "Apa bedanya dengan Whale JTO Smart Scanner?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Basisnya sama, tetapi Smart Scanner menambah input via barcode untuk operasional bervolume tinggi; Standard mengandalkan input manual untuk operasional harian biasa." }
+      }
+    ]
+  }
+  </script>
+  <!-- JSON-LD: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Beranda", "item": "https://www.timbanganpresisi.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Jembatan Timbang", "item": "https://www.timbanganpresisi.com/software-jembatan-timbang/" },
+      { "@type": "ListItem", "position": 3, "name": "Whale JTO Standard", "item": "https://www.timbanganpresisi.com/jto-standard/" }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Lewati ke konten utama</a>
+
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a class="brand" href="/">Timbangan<span>Presisi</span></a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Buka menu navigasi">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Navigasi utama">
+        <a href="/software-timbangan/">Software Timbangan</a>
+        <a href="/#perangkat">Perangkat Timbangan</a>
+        <a href="/blog/">Blog</a>
+        <a href="/tentang-kami/">About Us</a>
+        <a class="btn btn-wa btn-sm" href="https://wa.me/6281916364503" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Konsultasi Gratis
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- Kepala halaman: H1 = keyword utama -->
+    <div class="page-head">
+      <div class="container">
+        <h1>Software Jembatan Timbang Desktop untuk Operasional Harian</h1>
+        <p>Whale JTO Standard adalah software jembatan timbang desktop untuk operasional timbang masuk, keluar, dan biasa harian. Label transaksi yang fleksibel dan berjalan 100% offline membuatnya cocok untuk UKM hingga perusahaan menengah.</p>
+      </div>
+    </div>
+
+    <!-- Tampilan aplikasi: screenshot belum tersedia -->
+        <section class="section section--alt">
+      <div class="container">
+        <h2 class="section-title">Lihat Cara Kerjanya</h2>
+        <p class="lead">Video penjelasan Whale JTO Standard: alur dua kali timbang sampai tiket tercetak, dalam satu menit.</p>
+        <div class="video-box" data-video="/video/whale-jto-standard.mp4">
+          <img class="vposter" src="/img/video-poster-standard.jpg" alt="Cuplikan video penjelasan Whale JTO Standard" loading="lazy">
+          <button class="vplay" type="button" aria-label="Putar video penjelasan Whale JTO Standard">
+            <span class="vbtn"><svg viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg></span>
+            <span class="vlabel">Putar Video</span>
+          </button>
+          <span class="vdur">1:06</span>
+        </div>
+      </div>
+    </section>
+
+<section class="section">
+      <div class="container">
+        <h2 class="section-title">Tampilan Aplikasi</h2>
+        <p class="section-lead">Screenshot asli aplikasi &amp; lapangan. Tanpa gambar AI.</p>
+        <div class="shot-grid">
+          <figure>
+            <img src="/img/jto-standard/transaksi-timbang.JPG" alt="Layar transaksi timbang Whale JTO Standard: tab timbang masuk, keluar, biasa" loading="lazy">
+            <figcaption>Transaksi timbang — masuk, keluar, biasa</figcaption>
+          </figure>
+          <figure>
+            <img src="/img/jto-standard/master-data.JPG" alt="Master data Whale JTO Standard: kendaraan, supir, ekspedisi" loading="lazy">
+            <figcaption>Master data lengkap</figcaption>
+          </figure>
+          <figure>
+            <img src="/img/jto-standard/printout.JPG" alt="Preview tiket timbangan Whale JTO Standard" loading="lazy">
+            <figcaption>Preview tiket sebelum cetak</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fitur utama -->
+    <section class="section section--alt">
+      <div class="container">
+        <h2 class="section-title">Fitur Utama</h2>
+        <p class="section-lead">Yang paling dicari dari operasional timbang harian.</p>
+        <ul class="feature-list">
+          <li><strong>Tiga mode transaksi</strong><small>Masuk, keluar, dan biasa dalam satu aplikasi; netto dihitung otomatis (bruto &minus; tara) dengan pending transaction untuk timbang kedua.</small></li>
+          <li><strong>Label dan field fleksibel</strong><small>Admin mengubah label mode transaksi dan 8 field netral tanpa mengubah struktur database; form, riwayat, export Excel, dan printout mengikuti label yang tersimpan.</small></li>
+          <li><strong>Master data lengkap</strong><small>Kendaraan, pelanggan/supplier, ekspedisi, jenis truk, barang, driver, dan operator; import/export master via Excel.</small></li>
+          <li><strong>Koneksi indikator universal</strong><small>Berat dibaca via Serial/COM dengan parsing start/stop index; tab Hardware Link untuk setting teknis, angka berat besar di tab Timbang untuk operator.</small></li>
+          <li><strong>Template tiket kustom</strong><small>Editor layout tiket (posisi, area, alignment, style, token @FIELD01&ndash;@FIELD08) dengan preview sebelum cetak.</small></li>
+          <li><strong>Trial 99 transaksi</strong><small>Berjalan tanpa lisensi hingga 99 transaksi selesai; aktivasi lisensi offline berbasis RSA (device ID), tanpa perlu internet.</small></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Cocok untuk -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Cocok untuk</h2>
+        <p class="section-lead">UKM hingga perusahaan menengah &mdash; pabrik, gudang, dan tambang skala kecil &mdash; yang butuh sistem timbang desktop fleksibel untuk operasional harian dan berjalan penuh secara offline.</p>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section--alt">
+      <div class="container">
+        <h2 class="section-title">Pertanyaan Umum</h2>
+        <div class="faq">
+          <details>
+            <summary>Apakah Whale JTO Standard butuh koneksi internet?</summary>
+            <div class="faq-body">
+              <p>Tidak. Aplikasi berjalan 100% offline: database SQLite tersimpan lokal di komputer, dan aktivasi lisensi pun dilakukan offline via RSA.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Apakah ada masa trial?</summary>
+            <div class="faq-body">
+              <p>Ada. Anda bisa memakai penuh hingga 99 transaksi selesai tanpa lisensi. Setelah itu, aktivasi lisensi offline berbasis RSA.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Indikator timbangan merk apa saja yang didukung?</summary>
+            <div class="faq-body">
+              <p>Koneksi universal via Serial/COM &mdash; kompatibel dengan AND, Ohaus, CAS, Mettler Toledo, Excell, dan lainnya.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Apakah label mode dan field transaksi bisa diubah?</summary>
+            <div class="faq-body">
+              <p>Bisa. Admin mengubah label mode transaksi dan 8 field netral langsung dari aplikasi, tanpa mengubah struktur database maupun logika transaksi.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Apa bedanya dengan Whale JTO Smart Scanner?</summary>
+            <div class="faq-body">
+              <p>Basisnya sama, tetapi Smart Scanner menambah input via barcode untuk operasional bervolume tinggi; Standard mengandalkan input manual untuk operasional harian biasa.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Tertarik dengan Whale JTO Standard?</h2>
+        <p class="section-lead">Ceritakan kebutuhan timbangan Anda &mdash; kami bantu memilih varian dan skema lisensi yang pas.</p>
+        <p>
+          <a class="btn btn-wa" href="https://wa.me/6281916364503?text=Halo%2C%20saya%20ingin%20bertanya%20tentang%20Whale%20JTO%20Standard" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Tanya via WhatsApp
+          </a>
+          <a class="btn btn-ghost" href="/software-jembatan-timbang/">Bandingkan varian JTO</a>
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="/">Timbangan<span>Presisi</span></a>
+          <p>Software timbangan untuk pabrik, tambang, dan perkebunan Indonesia: jembatan timbang, check weighing, POS timbangan, dan integrasi loadcell.</p>
+        </div>
+        <nav class="footer-col" aria-label="Produk">
+          <h2>Produk</h2>
+          <ul>
+            <li><a href="/jto-pro/">Whale JTO Pro</a></li>
+            <li><a href="/jto-standard/">Whale JTO Standard</a></li>
+            <li><a href="/jto-smart-scanner/">Whale JTO Smart Scanner</a></li>
+            <li><a href="/jto-multi-item/">Whale JTO Multi Item</a></li>
+            <li><a href="/whale-cwo/">Whale CWO</a></li>
+            <li><a href="/pos-timbangan/">Whale POS</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-col" aria-label="Laman">
+          <h2>Laman</h2>
+          <ul>
+            <li><a href="/software-jembatan-timbang/">Jembatan Timbang</a></li>
+            <li><a href="/software-timbangan/">Software Timbangan</a></li>
+            <li><a href="/pos-timbangan/">POS Timbangan</a></li>
+            <li><a href="/barcode-timbangan/">Barcode</a></li>
+            <li><a href="/integrasi-loadcell/">Integrasi Loadcell</a></li>
+            <li><a href="/blog/">Blog</a>
+        <a href="/tentang-kami/">About Us</a></li>
+          </ul>
+        </nav>
+        <div class="footer-col" id="kontak">
+          <h2>Hubungi Kami</h2>
+          <ul>
+            <li>
+              <a class="footer-contact" href="https://wa.me/6281916364503" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                WA 6281916364503
+              </a>
+            </li>
+            <li>
+              <a class="footer-contact" href="mailto:info@timbanganpresisi.com">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+                info@timbanganpresisi.com
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        © 2026 PT Sentra Solusi Presisi · TimbanganPresisi.com
+      </div>
+    </div>
+  </footer>
+
+  <!-- Tombol WA mengambang — VERBATIM di semua halaman -->
+  <a class="wa-float" href="https://wa.me/6281916364503" target="_blank" rel="noopener" aria-label="Chat WhatsApp">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+  </a>
+
+  <!-- Script nav mobile — VERBATIM di semua halaman -->
+  <script>
+    (function () {
+      var header = document.getElementById('site-header');
+      var toggle = document.getElementById('nav-toggle');
+      toggle.addEventListener('click', function () {
+        var open = header.classList.toggle('nav-open');
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        toggle.setAttribute('aria-label', open ? 'Tutup menu navigasi' : 'Buka menu navigasi');
+      });
+    })();
+  </script>
+
+<script>
+document.querySelectorAll('.video-box').forEach(function (box) {
+  var btn = box.querySelector('.vplay');
+  if (!btn) return;
+  btn.addEventListener('click', function () {
+    var v = document.createElement('video');
+    v.src = box.getAttribute('data-video');
+    v.controls = true; v.autoplay = true; v.playsInline = true;
+    box.innerHTML = ''; box.appendChild(v);
+  });
+});
+</script>
+</body>
+</html>

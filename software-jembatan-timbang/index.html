@@ -6,14 +6,29 @@
   <title>Software Jembatan Timbang Otomatis & Anti Manipulasi | TimbanganPresisi</title>
   <meta name="description" content="Software jembatan timbang dengan integrasi CCTV, dashboard browser, snapshot transaksi, dan barcode scanner. Pilih varian sesuai skala bisnis Anda.">
   <link rel="canonical" href="https://www.timbanganpresisi.com/software-jembatan-timbang/">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="TimbanganPresisi.com">
   <meta property="og:title" content="Software Jembatan Timbang — Whale JTO">
   <meta property="og:description" content="Operasional timbang, dashboard web, CCTV live monitoring, dan snapshot transaksi dalam satu sistem.">
-  <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.timbanganpresisi.com/software-jembatan-timbang/">
+  <meta property="og:image" content="https://www.timbanganpresisi.com/img/jto-pro/hero-cctv.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Font: IBM Plex Sans (400/500/600/700).
+       DILARANG: Inter, Roboto, Fraunces, Geist, Plus Jakarta Sans, Space Grotesk. -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Satu CSS untuk semua halaman -->
   <link rel="stylesheet" href="/css/style.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/img/favicon.svg">
+
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Apa itu software jembatan timbang?","acceptedAnswer":{"@type":"Answer","text":"Software yang mengelola penimbangan kendaraan secara digital. Mencatat bruto, tara, netto otomatis, menyimpan riwayat transaksi, dan mencetak tiket timbang."}},{"@type":"Question","name":"Apakah bisa terintegrasi dengan CCTV?","acceptedAnswer":{"@type":"Answer","text":"Ya. Whale JTO Pro mendukung hingga 4 IP Camera atau kanal NVR. Screenshot diambil otomatis setiap transaksi tersimpan dan terhubung langsung dengan data tiket."}},{"@type":"Question","name":"Apa bedanya Whale JTO Pro, Standard, Smart Scanner, dan Multi Item?","acceptedAnswer":{"@type":"Answer","text":"Standard untuk operasional harian dasar. Smart Scanner untuk volume tinggi dengan input barcode. Multi Item untuk kendaraan bermuatan campuran. Pro untuk enterprise dengan database terpusat, dashboard web, dan CCTV."}},{"@type":"Question","name":"Apakah bisa digunakan tanpa internet?","acceptedAnswer":{"@type":"Answer","text":"Ya. Semua varian Whale JTO dirancang untuk jaringan lokal tanpa koneksi internet."}},{"@type":"Question","name":"Merk indikator apa yang didukung?","acceptedAnswer":{"@type":"Answer","text":"Semua varian mendukung koneksi universal via Serial/COM — kompatibel dengan AND, Ohaus, CAS, Mettler Toledo, Excell, dan lainnya."}}]}
   </script>
@@ -23,341 +38,426 @@
 </head>
 <body>
 
-<header class="site-header">
-  <div class="header-inner">
-    <a class="site-logo" href="/">Timbangan<span>Presisi</span></a>
-    <button class="nav-toggle" onclick="document.querySelector('.main-nav').classList.toggle('active')" aria-label="Toggle menu">☰</button>
-    <nav class="main-nav">
-      <a href="/software-timbangan/">Software Timbangan</a>
-      <a href="/integrasi-loadcell/">Integrasi Loadcell</a>
-      <a href="/pos-timbangan/">POS Timbangan</a>
-      <a href="/software-jembatan-timbang/">Jembatan Timbang</a>
-      <a href="/blog/">Blog</a>
-      <a class="nav-cta" href="https://wa.me/6281916364503?text=Halo%2C%20saya%20ingin%20konsultasi%20tentang%20software%20jembatan%20timbang">💬 Konsultasi Gratis</a>
-    </nav>
-  </div>
-</header>
+  <a class="skip-link" href="#main">Lewati ke konten utama</a>
 
-<!-- HERO -->
-<section class="jto-hero">
-  <div class="container">
-    <div class="jto-hero-label">Whale JTO — Lini Produk Jembatan Timbang</div>
-    <h1>Satu alur untuk timbang,<br>monitor, dan dokumentasi</h1>
-    <p>Dari pencatatan timbang harian hingga enterprise dengan CCTV dan dashboard terpusat. Pilih varian yang sesuai skala operasional Anda.</p>
-    <a class="jto-hero-cta" href="https://wa.me/6281916364503?text=Halo%2C%20saya%20ingin%20konsultasi%20software%20jembatan%20timbang">💬 Konsultasi Gratis</a>
-    <div class="jto-hero-badges">
-      <span>🔌 Terhubung ke semua merk indikator</span>
-      <span>📋 Tiket timbang dengan audit trail</span>
-      <span>📊 Pantau operasional dari browser</span>
-      <span>⚙️ Konfigurasi fleksibel per kebutuhan</span>
+  <!-- ============================================================
+       HEADER — VERBATIM. Salin persis ke semua halaman.
+       Aturan: tambahkan class "is-active" pada <a> nav yang sesuai
+       halaman aktif. Jangan ubah teks, href, atau urutan.
+       ============================================================ -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a class="brand" href="/">Timbangan<span>Presisi</span></a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Buka menu navigasi">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Navigasi utama">
+        <a href="/software-timbangan/" class="is-active">Software Timbangan</a>
+        <a href="/#perangkat">Perangkat Timbangan</a>
+        <a href="/blog/">Blog</a>
+        <a href="/tentang-kami/">About Us</a>
+        <a class="btn btn-wa btn-sm" href="https://wa.me/6281916364503" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Konsultasi Gratis
+        </a>
+      </nav>
     </div>
-  </div>
-</section>
+  </header>
 
-<!-- FEATURE SHOWCASE: DESKTOP APP -->
-<section class="jto-feature-section">
-  <div class="container">
-    <div class="jto-feature-row">
-      <div class="jto-feature-text">
-        <div class="jto-feature-label">Operasional Timbang</div>
-        <h2>Desktop yang fokus ke timbang</h2>
-        <p>Tampilan operator dirancang untuk kecepatan. Tiga mode transaksi — masuk, keluar, biasa — dalam satu layar. Berat terbaca langsung dari indikator.</p>
-        <ul class="jto-feature-list">
-          <li>Timbang masuk, keluar, dan biasa</li>
-          <li>Berat realtime dari indikator</li>
-          <li>Pending transaction untuk timbang kedua</li>
-          <li>Preview tiket sebelum cetak</li>
-        </ul>
+  <main id="main">
+
+    <!-- HERO -->
+    <div class="page-head">
+      <div class="container">
+        <span class="badge">Whale JTO — Lini Produk Jembatan Timbang</span>
+        <h1>Satu alur untuk timbang,<br>monitor, dan dokumentasi</h1>
+        <p>Dari pencatatan timbang harian hingga enterprise dengan CCTV dan dashboard terpusat. Pilih varian yang sesuai skala operasional Anda.</p>
+        <p>
+          <a class="btn btn-wa" href="https://wa.me/6281916364503?text=Halo%2C%20saya%20ingin%20konsultasi%20software%20jembatan%20timbang" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Konsultasi Gratis
+          </a>
+        </p>
+        <p>
+          <span class="badge">Terhubung ke semua merk indikator</span>
+          <span class="badge">Tiket timbang dengan audit trail</span>
+          <span class="badge">Pantau operasional dari browser</span>
+          <span class="badge">Konfigurasi fleksibel per kebutuhan</span>
+        </p>
       </div>
-      <div class="jto-feature-visual">
-        <div class="jto-screen-frame">
+    </div>
+
+    <!-- FITUR: DESKTOP APP -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Desktop yang fokus ke timbang</h2>
+        <p class="section-lead">Tampilan operator dirancang untuk kecepatan. Tiga mode transaksi — masuk, keluar, biasa — dalam satu layar. Berat terbaca langsung dari indikator.</p>
+        <div class="product-card__media" style="margin: 24px 0;">
           <img src="/img/jto-pro/desktop-app.jpg" alt="Tampilan desktop operator Whale JTO Pro" loading="lazy">
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- FEATURE SHOWCASE: DASHBOARD -->
-<section class="jto-feature-section jto-feature-section-alt">
-  <div class="container">
-    <div class="jto-feature-row jto-feature-row-reverse">
-      <div class="jto-feature-text">
-        <div class="jto-feature-label">Dashboard Monitoring</div>
-        <h2>Pantau operasional dari browser</h2>
-        <p>Supervisor tidak perlu berada di komputer operator. Ringkasan transaksi, histori, laporan, dan status real-time tersedia dari browser di jaringan lokal.</p>
-        <ul class="jto-feature-list">
-          <li>Total transaksi, selesai vs pending</li>
-          <li>Total netto harian</li>
-          <li>Riwayat per ticket, kendaraan, customer</li>
-          <li>Export Excel dan cetak PDF</li>
+        <ul class="feature-list">
+          <li><strong>Timbang masuk, keluar, dan biasa</strong><small>Mode transaksi dalam satu layar tanpa pindah aplikasi.</small></li>
+          <li><strong>Berat realtime dari indikator</strong><small>Terhubung universal via Serial/COM ke berbagai merk indikator.</small></li>
+          <li><strong>Pending transaction</strong><small>Timbang pertama disimpan sebagai pending sampai timbang kedua selesai.</small></li>
+          <li><strong>Preview tiket sebelum cetak</strong><small>Operator melihat tampilan tiket sebelum mencetak, mengurangi kesalahan.</small></li>
         </ul>
       </div>
-      <div class="jto-feature-visual">
-        <div class="jto-screen-frame">
+    </section>
+
+    <!-- FITUR: DASHBOARD -->
+    <section class="section section--alt">
+      <div class="container">
+        <h2 class="section-title">Pantau operasional dari browser</h2>
+        <p class="section-lead">Supervisor tidak perlu berada di komputer operator. Ringkasan transaksi, histori, laporan, dan status real-time tersedia dari browser di jaringan lokal.</p>
+        <div class="product-card__media" style="margin: 24px 0;">
           <img src="/img/jto-pro/dashboard.jpg" alt="Dashboard monitoring Whale JTO Pro" loading="lazy">
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- FEATURE SHOWCASE: CCTV -->
-<section class="jto-feature-section">
-  <div class="container">
-    <div class="jto-feature-row">
-      <div class="jto-feature-text">
-        <div class="jto-feature-label">CCTV + Snapshot Transaksi</div>
-        <h2>Bukti visual di setiap transaksi</h2>
-        <p>Kamera bukan sistem terpisah. Snapshot diambil otomatis saat transaksi tersimpan dan terhubung langsung dengan nomor tiket — bukan tersimpan sebagai foto lepas.</p>
-        <ul class="jto-feature-list">
-          <li>Live view hingga 4 kamera dari browser dan desktop</li>
-          <li>Snapshot otomatis di timbang 1 dan timbang 2</li>
-          <li>Foto bisa dibuka dari detail histori transaksi</li>
-          <li>Kamera offline tidak membatalkan transaksi</li>
+        <ul class="feature-list">
+          <li><strong>Total transaksi, selesai vs pending</strong><small>Status operasional terlihat sekilas dari satu layar.</small></li>
+          <li><strong>Total netto harian</strong><small>Rekapitulasi netto otomatis per hari operasional.</small></li>
+          <li><strong>Riwayat per ticket, kendaraan, customer</strong><small>Pencarian dan filter riwayat transaksi yang lengkap.</small></li>
+          <li><strong>Export Excel dan cetak PDF</strong><small>Laporan siap pakai untuk manajemen dan audit.</small></li>
         </ul>
       </div>
-      <div class="jto-feature-visual">
-        <div class="jto-screen-frame">
+    </section>
+
+    <!-- FITUR: CCTV -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Bukti visual di setiap transaksi</h2>
+        <p class="section-lead">Kamera bukan sistem terpisah. Snapshot diambil otomatis saat transaksi tersimpan dan terhubung langsung dengan nomor tiket — bukan tersimpan sebagai foto lepas.</p>
+        <div class="product-card__media" style="margin: 24px 0;">
           <img src="/img/jto-pro/hero-cctv.jpg" alt="CCTV live monitoring 4 kamera Whale JTO Pro" loading="lazy">
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- FEATURE SHOWCASE: SNAPSHOT -->
-<section class="jto-feature-section jto-feature-section-alt">
-  <div class="container">
-    <div class="jto-feature-row jto-feature-row-reverse">
-      <div class="jto-feature-text">
-        <div class="jto-feature-label">Transaction Snapshot</div>
-        <h2>Kondisi lapangan tidak terpisah dari data</h2>
-        <p>Setiap fase timbang punya bukti foto sendiri. Ketika ada sengketa atau audit, semua tersedia di satu tempat — tidak perlu cari rekaman CCTV terpisah.</p>
-        <ul class="jto-feature-list">
-          <li>Snapshot per fase: timbang 1 dan timbang 2</li>
-          <li>Terhubung dengan nomor tiket transaksi</li>
-          <li>Galeri foto bisa dibuka dari riwayat</li>
-          <li>Format JPEG, disimpan lokal di server</li>
+        <ul class="feature-list">
+          <li><strong>Live view hingga 4 kamera</strong><small>Dari browser dan desktop, via RTSP — IP camera atau kanal NVR.</small></li>
+          <li><strong>Snapshot otomatis di timbang 1 dan timbang 2</strong><small>Dari kamera yang dipilih, terhubung dengan nomor tiket.</small></li>
+          <li><strong>Foto bisa dibuka dari detail histori transaksi</strong><small>Mudah diakses saat ada sengketa atau audit.</small></li>
+          <li><strong>Kamera offline tidak membatalkan transaksi</strong><small>Operasional selalu jadi prioritas.</small></li>
         </ul>
       </div>
-      <div class="jto-feature-visual">
-        <div class="jto-screen-frame">
+    </section>
+
+    <!-- FITUR: SNAPSHOT -->
+    <section class="section section--alt">
+      <div class="container">
+        <h2 class="section-title">Kondisi lapangan tidak terpisah dari data</h2>
+        <p class="section-lead">Setiap fase timbang punya bukti foto sendiri. Ketika ada sengketa atau audit, semua tersedia di satu tempat — tidak perlu cari rekaman CCTV terpisah.</p>
+        <div class="product-card__media" style="margin: 24px 0;">
           <img src="/img/jto-pro/snapshot.jpg" alt="Transaction snapshot Whale JTO Pro" loading="lazy">
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- PRODUCT VARIANTS -->
-<section class="jto-variants-section">
-  <div class="container">
-    <div class="jto-variants-header">
-      <h2>Pilih varian sesuai kebutuhan</h2>
-      <p>Semua varian terhubung ke indikator via Serial/COM dan mendukung berbagai merk.</p>
-    </div>
-    <div class="jto-variants-grid">
-
-      <!-- PRO -->
-      <div class="jto-variant-card jto-variant-featured">
-        <div class="jto-variant-top">
-          <span class="jto-variant-badge-pro">Enterprise</span>
-          <h3>Whale JTO Pro</h3>
-          <p>Operasional timbang, dashboard web, CCTV live monitoring, dan snapshot transaksi dalam satu sistem.</p>
-        </div>
-        <ul class="jto-variant-features">
-          <li>✓ Timbang masuk, keluar, biasa</li>
-          <li>✓ Database PostgreSQL terpusat</li>
-          <li>✓ Dashboard browser internal</li>
-          <li>✓ CCTV live view + snapshot otomatis</li>
-          <li>✓ Multi operator &amp; hak akses</li>
-          <li>✓ Audit trail &amp; cetak ORIGINAL/COPY</li>
+        <ul class="feature-list">
+          <li><strong>Snapshot per fase: timbang 1 dan timbang 2</strong><small>Dari kamera yang dipilih, otomatis saat transaksi tersimpan.</small></li>
+          <li><strong>Terhubung dengan nomor tiket transaksi</strong><small>Foto bukan file lepas — terikat langsung pada data transaksi.</small></li>
+          <li><strong>Galeri foto bisa dibuka dari riwayat</strong><small>Lihat bukti visual dari detail histori transaksi.</small></li>
+          <li><strong>Format JPEG, disimpan lokal di server</strong><small>Foto tidak tercetak di tiket; arsip tetap rapi di server lokal.</small></li>
         </ul>
-        <div class="jto-variant-scale">Menengah – Enterprise</div>
-        <a href="https://wa.me/6281916364503?text=Halo%2C%20saya%20tertarik%20dengan%20Whale%20JTO%20Pro" class="jto-variant-btn-pro">Tanya Whale JTO Pro →</a>
       </div>
+    </section>
 
-      <!-- STANDARD -->
-      <div class="jto-variant-card">
-        <div class="jto-variant-top">
-          <span class="jto-variant-badge">Desktop</span>
-          <h3>Whale JTO Standard</h3>
-          <p>Sistem jembatan timbang desktop yang fleksibel dan siap pakai untuk operasional harian.</p>
+    <!-- PRODUCT VARIANTS -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Pilih varian sesuai kebutuhan</h2>
+        <p class="section-lead">Semua varian terhubung ke indikator via Serial/COM dan mendukung berbagai merk.</p>
+        <div class="product-grid">
+
+          <!-- PRO -->
+          <article class="product-card">
+            <div class="product-card__media">
+              <img src="/img/jto-pro/hero-cctv.jpg" alt="CCTV live monitoring Whale JTO Pro" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="badge">Enterprise</span>
+              <h3 class="product-card__title"><a href="/jto-pro/">Whale JTO Pro</a></h3>
+              <p class="product-card__desc">Operasional timbang, dashboard web, CCTV live monitoring, dan snapshot transaksi dalam satu sistem. Skala: Menengah – Enterprise.</p>
+              <ul class="feature-list">
+                <li><strong>Timbang masuk, keluar, biasa</strong></li>
+                <li><strong>Database PostgreSQL terpusat</strong></li>
+                <li><strong>Dashboard browser internal</strong></li>
+                <li><strong>CCTV live view + snapshot otomatis</strong></li>
+                <li><strong>Multi operator &amp; hak akses</strong></li>
+                <li><strong>Audit trail &amp; cetak ORIGINAL/COPY</strong></li>
+              </ul>
+              <div class="product-card__actions">
+                <a class="btn btn-primary btn-sm" href="/jto-pro/">Lihat Detail</a>
+                <a class="btn btn-wa btn-sm" href="https://wa.me/6281916364503?text=Halo%2C%20saya%20tertarik%20dengan%20Whale%20JTO%20Pro" target="_blank" rel="noopener">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                  Tanya Whale JTO Pro
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- STANDARD -->
+          <article class="product-card">
+            <div class="product-card__body">
+              <span class="badge">Desktop</span>
+              <h3 class="product-card__title">Whale JTO Standard</h3>
+              <p class="product-card__desc">Sistem jembatan timbang desktop yang fleksibel dan siap pakai untuk operasional harian. Skala: UKM – Menengah.</p>
+              <div class="placeholder-panel" role="img" aria-label="Screenshot Whale JTO Standard segera tersedia">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+                <strong>Screenshot: Whale JTO Standard — segera tersedia</strong>
+                <small>Foto/screenshot asli sedang disiapkan — segera tersedia.</small>
+              </div>
+              <ul class="feature-list">
+                <li><strong>Timbang masuk, keluar, biasa</strong></li>
+                <li><strong>Master data lengkap</strong></li>
+                <li><strong>8 field transaksi fleksibel</strong></li>
+                <li><strong>Riwayat &amp; ekspor Excel</strong></li>
+                <li><strong>Template tiket kustom</strong></li>
+                <li><strong>Penyimpanan lokal SQLite</strong></li>
+              </ul>
+              <div class="product-card__actions">
+                <a class="btn btn-wa btn-sm" href="https://wa.me/6281916364503?text=Halo%2C%20saya%20tertarik%20dengan%20Whale%20JTO%20Standard" target="_blank" rel="noopener">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                  Tanya Whale JTO Standard
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- SMART SCANNER -->
+          <article class="product-card">
+            <div class="product-card__body">
+              <span class="badge">Barcode</span>
+              <h3 class="product-card__title">Whale JTO Smart Scanner</h3>
+              <p class="product-card__desc">Percepat transaksi dengan identifikasi data berbasis barcode untuk volume tinggi. Skala: UKM – Menengah (volume tinggi).</p>
+              <div class="placeholder-panel" role="img" aria-label="Screenshot Whale JTO Smart Scanner segera tersedia">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+                <strong>Screenshot: Whale JTO Smart Scanner — segera tersedia</strong>
+                <small>Foto/screenshot asli sedang disiapkan — segera tersedia.</small>
+              </div>
+              <ul class="feature-list">
+                <li><strong>Semua fitur Standard</strong></li>
+                <li><strong>Input via barcode scanner USB</strong></li>
+                <li><strong>Kode barcode dengan nomor urut otomatis</strong></li>
+                <li><strong>Cetak label barcode satuan/massal</strong></li>
+                <li><strong>Kurangi input manual</strong></li>
+              </ul>
+              <div class="product-card__actions">
+                <a class="btn btn-wa btn-sm" href="https://wa.me/6281916364503?text=Halo%2C%20saya%20tertarik%20dengan%20Whale%20JTO%20Smart%20Scanner" target="_blank" rel="noopener">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                  Tanya Smart Scanner
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- MULTI ITEM -->
+          <article class="product-card">
+            <div class="product-card__body">
+              <span class="badge">Multi Muatan</span>
+              <h3 class="product-card__title">Whale JTO Multi Item</h3>
+              <p class="product-card__desc">Satu tiket untuk kendaraan dengan banyak jenis muatan. Netto per item dihitung otomatis. Skala: UKM – Menengah (muatan campuran).</p>
+              <div class="placeholder-panel" role="img" aria-label="Screenshot Whale JTO Multi Item segera tersedia">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+                <strong>Screenshot: Whale JTO Multi Item — segera tersedia</strong>
+                <small>Foto/screenshot asli sedang disiapkan — segera tersedia.</small>
+              </div>
+              <ul class="feature-list">
+                <li><strong>Satu tiket untuk banyak item</strong></li>
+                <li><strong>Penimbangan muat bertahap</strong></li>
+                <li><strong>Netto per item dari selisih berat</strong></li>
+                <li><strong>Harga/kg &amp; subtotal otomatis</strong></li>
+                <li><strong>Rekap total satu printout</strong></li>
+              </ul>
+              <div class="product-card__actions">
+                <a class="btn btn-wa btn-sm" href="https://wa.me/6281916364503?text=Halo%2C%20saya%20tertarik%20dengan%20Whale%20JTO%20Multi%20Item" target="_blank" rel="noopener">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                  Tanya Multi Item
+                </a>
+              </div>
+            </div>
+          </article>
+
         </div>
-        <ul class="jto-variant-features">
-          <li>✓ Timbang masuk, keluar, biasa</li>
-          <li>✓ Master data lengkap</li>
-          <li>✓ 8 field transaksi fleksibel</li>
-          <li>✓ Riwayat &amp; ekspor Excel</li>
-          <li>✓ Template tiket kustom</li>
-          <li>✓ Penyimpanan lokal SQLite</li>
-        </ul>
-        <div class="jto-variant-scale">UKM – Menengah</div>
-        <a href="https://wa.me/6281916364503?text=Halo%2C%20saya%20tertarik%20dengan%20Whale%20JTO%20Standard" class="jto-variant-btn">Tanya Whale JTO Standard →</a>
       </div>
+    </section>
 
-      <!-- SMART SCANNER -->
-      <div class="jto-variant-card">
-        <div class="jto-variant-top">
-          <span class="jto-variant-badge">Barcode</span>
-          <h3>Whale JTO Smart Scanner</h3>
-          <p>Percepat transaksi dengan identifikasi data berbasis barcode untuk volume tinggi.</p>
+    <!-- COMPARISON TABLE -->
+    <section class="section section--alt">
+      <div class="container">
+        <h2 class="section-title">Perbandingan varian</h2>
+        <div class="table-scroll">
+          <table class="compare-table">
+            <thead>
+              <tr>
+                <th scope="col">Fitur</th>
+                <th scope="col">Standard</th>
+                <th scope="col">Smart Scanner</th>
+                <th scope="col">Multi Item</th>
+                <th scope="col">Pro</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Timbang masuk/keluar/biasa</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+              <tr><td>Cetak tiket kustom</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+              <tr><td>Ekspor Excel</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+              <tr><td>Input via barcode scanner</td><td>—</td><td class="yes">✓</td><td>—</td><td>—</td></tr>
+              <tr><td>Multi item per tiket</td><td>—</td><td>—</td><td class="yes">✓</td><td>—</td></tr>
+              <tr><td>Database terpusat (PostgreSQL)</td><td>—</td><td>—</td><td>—</td><td class="yes">✓</td></tr>
+              <tr><td>Dashboard browser internal</td><td>—</td><td>—</td><td>—</td><td class="yes">✓</td></tr>
+              <tr><td>CCTV live view + snapshot</td><td>—</td><td>—</td><td>—</td><td class="yes">✓</td></tr>
+              <tr><td>Multi perangkat terotorisasi</td><td>—</td><td>—</td><td>—</td><td class="yes">✓</td></tr>
+            </tbody>
+          </table>
         </div>
-        <ul class="jto-variant-features">
-          <li>✓ Semua fitur Standard</li>
-          <li>✓ Input via barcode scanner USB</li>
-          <li>✓ Kode barcode dengan nomor urut otomatis</li>
-          <li>✓ Cetak label barcode satuan/massal</li>
-          <li>✓ Kurangi input manual</li>
-        </ul>
-        <div class="jto-variant-scale">UKM – Menengah (volume tinggi)</div>
-        <a href="https://wa.me/6281916364503?text=Halo%2C%20saya%20tertarik%20dengan%20Whale%20JTO%20Smart%20Scanner" class="jto-variant-btn">Tanya Smart Scanner →</a>
       </div>
+    </section>
 
-      <!-- MULTI ITEM -->
-      <div class="jto-variant-card">
-        <div class="jto-variant-top">
-          <span class="jto-variant-badge">Multi Muatan</span>
-          <h3>Whale JTO Multi Item</h3>
-          <p>Satu tiket untuk kendaraan dengan banyak jenis muatan. Netto per item dihitung otomatis.</p>
+    <!-- FAQ -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Pertanyaan Umum</h2>
+        <div class="faq">
+          <details>
+            <summary>Bagaimana cara kerja integrasi CCTV?</summary>
+            <div class="faq-body">
+              <p>Whale JTO Pro terhubung ke hingga 4 IP Camera atau NVR via RTSP. Setiap transaksi tersimpan, sistem otomatis capture snapshot dari kamera yang dipilih dan menyimpannya bersama data tiket.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Merk indikator apa yang didukung?</summary>
+            <div class="faq-body">
+              <p>Semua varian mendukung koneksi universal via Serial/COM — kompatibel dengan AND, Ohaus, CAS, Mettler Toledo, Excell, GSC, dan mayoritas merk lainnya.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Apakah butuh koneksi internet?</summary>
+            <div class="faq-body">
+              <p>Tidak. Semua varian dirancang untuk jaringan lokal. Dashboard Pro pun berjalan di browser dalam jaringan internal tanpa internet.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Varian mana yang cocok untuk saya?</summary>
+            <div class="faq-body">
+              <p>Ceritakan jumlah timbangan, industri, dan kebutuhan laporan Anda ke kami via WhatsApp — kami rekomendasikan tanpa biaya.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Apakah kamera offline membatalkan transaksi?</summary>
+            <div class="faq-body">
+              <p>Tidak. Jika kamera gagal capture, transaksi timbang tetap tersimpan. Operasional selalu jadi prioritas.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Apakah tiket bisa di-cetak ulang?</summary>
+            <div class="faq-body">
+              <p>Ya. Whale JTO Pro mendukung cetak ulang dengan token audit yang membedakan cetakan ORIGINAL dan COPY.</p>
+            </div>
+          </details>
         </div>
-        <ul class="jto-variant-features">
-          <li>✓ Satu tiket untuk banyak item</li>
-          <li>✓ Penimbangan muat bertahap</li>
-          <li>✓ Netto per item dari selisih berat</li>
-          <li>✓ Harga/kg &amp; subtotal otomatis</li>
-          <li>✓ Rekap total satu printout</li>
-        </ul>
-        <div class="jto-variant-scale">UKM – Menengah (muatan campuran)</div>
-        <a href="https://wa.me/6281916364503?text=Halo%2C%20saya%20tertarik%20dengan%20Whale%20JTO%20Multi%20Item" class="jto-variant-btn">Tanya Multi Item →</a>
       </div>
+    </section>
 
-    </div>
-  </div>
-</section>
-
-<!-- COMPARISON TABLE -->
-<section class="jto-compare-section">
-  <div class="container">
-    <h2>Perbandingan varian</h2>
-    <div class="jto-compare">
-      <table>
-        <thead>
-          <tr>
-            <th>Fitur</th>
-            <th>Standard</th>
-            <th>Smart Scanner</th>
-            <th>Multi Item</th>
-            <th>Pro</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>Timbang masuk/keluar/biasa</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr>
-          <tr><td>Cetak tiket kustom</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr>
-          <tr><td>Ekspor Excel</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr>
-          <tr><td>Input via barcode scanner</td><td>—</td><td>✓</td><td>—</td><td>—</td></tr>
-          <tr><td>Multi item per tiket</td><td>—</td><td>—</td><td>✓</td><td>—</td></tr>
-          <tr><td>Database terpusat (PostgreSQL)</td><td>—</td><td>—</td><td>—</td><td>✓</td></tr>
-          <tr><td>Dashboard browser internal</td><td>—</td><td>—</td><td>—</td><td>✓</td></tr>
-          <tr><td>CCTV live view + snapshot</td><td>—</td><td>—</td><td>—</td><td>✓</td></tr>
-          <tr><td>Multi perangkat terotorisasi</td><td>—</td><td>—</td><td>—</td><td>✓</td></tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</section>
-
-<!-- FAQ -->
-<section class="jto-faq-section">
-  <div class="container">
-    <h2>Pertanyaan umum</h2>
-    <div class="jto-faq-grid">
-      <div class="jto-faq-item">
-        <h4>Bagaimana cara kerja integrasi CCTV?</h4>
-        <p>Whale JTO Pro terhubung ke hingga 4 IP Camera atau NVR via RTSP. Setiap transaksi tersimpan, sistem otomatis capture snapshot dari kamera yang dipilih dan menyimpannya bersama data tiket.</p>
+    <!-- CTA -->
+    <section class="section section--alt">
+      <div class="container">
+        <h2 class="section-title">Tidak yakin pilih yang mana?</h2>
+        <p class="section-lead">Konsultasi gratis — ceritakan kebutuhan Anda, kami rekomendasikan solusi yang tepat.</p>
+        <p>
+          <a class="btn btn-wa" href="https://wa.me/6281916364503?text=Halo%2C%20saya%20butuh%20rekomendasi%20software%20jembatan%20timbang" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Konsultasi Gratis
+          </a>
+        </p>
       </div>
-      <div class="jto-faq-item">
-        <h4>Merk indikator apa yang didukung?</h4>
-        <p>Semua varian mendukung koneksi universal via Serial/COM — kompatibel dengan AND, Ohaus, CAS, Mettler Toledo, Excell, GSC, dan mayoritas merk lainnya.</p>
+    </section>
+
+    <!-- BACA JUGA -->
+    <section class="section section--tight">
+      <div class="container">
+        <div class="prose">
+          <p><strong>Baca juga:</strong></p>
+          <ul>
+            <li><a href="/blog/manfaat-software-jembatan-timbang/">5 Manfaat Software Jembatan Timbang untuk Pabrik dan Tambang</a></li>
+            <li><a href="/integrasi-loadcell/">Integrasi Loadcell ke Komputer — Panduan Lengkap</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="jto-faq-item">
-        <h4>Apakah butuh koneksi internet?</h4>
-        <p>Tidak. Semua varian dirancang untuk jaringan lokal. Dashboard Pro pun berjalan di browser dalam jaringan internal tanpa internet.</p>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER — VERBATIM. Salin persis ke semua halaman.
+       ============================================================ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="/">Timbangan<span>Presisi</span></a>
+          <p>Software timbangan untuk pabrik, tambang, dan perkebunan Indonesia: jembatan timbang, check weighing, POS timbangan, dan integrasi loadcell.</p>
+        </div>
+        <nav class="footer-col" aria-label="Produk">
+          <h2>Produk</h2>
+          <ul>
+            <li><a href="/jto-pro/">Whale JTO Pro</a></li>
+            <li><a href="/jto-standard/">Whale JTO Standard</a></li>
+            <li><a href="/jto-smart-scanner/">Whale JTO Smart Scanner</a></li>
+            <li><a href="/jto-multi-item/">Whale JTO Multi Item</a></li>
+            <li><a href="/whale-cwo/">Whale CWO</a></li>
+            <li><a href="/pos-timbangan/">Whale POS</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-col" aria-label="Laman">
+          <h2>Laman</h2>
+          <ul>
+            <li><a href="/software-jembatan-timbang/">Jembatan Timbang</a></li>
+            <li><a href="/software-timbangan/">Software Timbangan</a></li>
+            <li><a href="/pos-timbangan/">POS Timbangan</a></li>
+            <li><a href="/barcode-timbangan/">Barcode</a></li>
+            <li><a href="/integrasi-loadcell/">Integrasi Loadcell</a></li>
+            <li><a href="/blog/">Blog</a>
+        <a href="/tentang-kami/">About Us</a></li>
+          </ul>
+        </nav>
+        <div class="footer-col" id="kontak">
+          <h2>Hubungi Kami</h2>
+          <ul>
+            <li>
+              <a class="footer-contact" href="https://wa.me/6281916364503" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                WA 6281916364503
+              </a>
+            </li>
+            <li>
+              <a class="footer-contact" href="mailto:info@timbanganpresisi.com">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+                info@timbanganpresisi.com
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="jto-faq-item">
-        <h4>Varian mana yang cocok untuk saya?</h4>
-        <p>Ceritakan jumlah timbangan, industri, dan kebutuhan laporan Anda ke kami via WhatsApp — kami rekomendasikan tanpa biaya.</p>
-      </div>
-      <div class="jto-faq-item">
-        <h4>Apakah kamera offline membatalkan transaksi?</h4>
-        <p>Tidak. Jika kamera gagal capture, transaksi timbang tetap tersimpan. Operasional selalu jadi prioritas.</p>
-      </div>
-      <div class="jto-faq-item">
-        <h4>Apakah tiket bisa di-cetak ulang?</h4>
-        <p>Ya. Whale JTO Pro mendukung cetak ulang dengan token audit yang membedakan cetakan ORIGINAL dan COPY.</p>
+      <div class="footer-bottom">
+        © 2026 PT Sentra Solusi Presisi · TimbanganPresisi.com
       </div>
     </div>
-  </div>
-</section>
+  </footer>
 
-<!-- CTA -->
-<section class="jto-cta-section">
-  <div class="container">
-    <h2>Tidak yakin pilih yang mana?</h2>
-    <p>Konsultasi gratis — ceritakan kebutuhan Anda, kami rekomendasikan solusi yang tepat.</p>
-    <a href="https://wa.me/6281916364503?text=Halo%2C%20saya%20butuh%20rekomendasi%20software%20jembatan%20timbang" class="jto-cta-btn">💬 Konsultasi Gratis</a>
-  </div>
-</section>
+  <!-- Tombol WA mengambang — VERBATIM di semua halaman -->
+  <a class="wa-float" href="https://wa.me/6281916364503" target="_blank" rel="noopener" aria-label="Chat WhatsApp">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+  </a>
 
-<div class="page-content" style="max-width:900px; margin: 0 auto; padding: 0 20px 40px;">
-  <div class="article-nav">
-    <p><strong>Baca juga:</strong></p>
-    <ul>
-      <li><a href="/blog/manfaat-software-jembatan-timbang/">5 Manfaat Software Jembatan Timbang untuk Pabrik dan Tambang</a></li>
-      <li><a href="/integrasi-loadcell/">Integrasi Loadcell ke Komputer — Panduan Lengkap</a></li>
-    </ul>
-  </div>
-</div>
+  <!-- Script nav mobile — VERBATIM di semua halaman -->
+  <script>
+    (function () {
+      var header = document.getElementById('site-header');
+      var toggle = document.getElementById('nav-toggle');
+      toggle.addEventListener('click', function () {
+        var open = header.classList.toggle('nav-open');
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        toggle.setAttribute('aria-label', open ? 'Tutup menu navigasi' : 'Buka menu navigasi');
+      });
+    })();
+  </script>
 
-<footer class="site-footer">
-  <div class="footer-grid">
-    <div class="footer-col">
-      <h4>TimbanganPresisi</h4>
-      <p>Solusi software timbangan digital terintegrasi untuk industri Indonesia.</p>
-    </div>
-    <div class="footer-col">
-      <h4>Produk</h4>
-      <a href="/software-timbangan/">Software Timbangan</a>
-      <a href="/integrasi-loadcell/">Integrasi Loadcell</a>
-      <a href="/pos-timbangan/">POS Timbangan</a>
-      <a href="/software-jembatan-timbang/">Jembatan Timbang</a>
-      <a href="/barcode-timbangan/">Barcode Timbangan</a>
-    </div>
-    <div class="footer-col">
-      <h4>Industri</h4>
-      <a href="#">Gudang &amp; Logistik</a>
-      <a href="#">Pabrik &amp; Manufaktur</a>
-      <a href="#">Retail &amp; Toko</a>
-      <a href="#">Distributor</a>
-    </div>
-    <div class="footer-col">
-      <h4>Hubungi Kami</h4>
-      <a href="https://wa.me/6281916364503">💬 WhatsApp</a>
-      <a href="mailto:info@timbanganpresisi.com">📧 Email</a>
-    </div>
-  </div>
-  <div class="footer-bottom">© 2025 TimbanganPresisi.com. All rights reserved.</div>
-</footer>
-
-<a class="wa-float" href="https://wa.me/6281916364503?text=Halo%2C%20saya%20ingin%20konsultasi%20tentang%20software%20timbangan" aria-label="Chat WhatsApp" target="_blank" rel="noopener">💬</a>
-
-<script>
-document.querySelectorAll('.main-nav a').forEach(function(link) {
-  link.addEventListener('click', function() {
-    document.querySelector('.main-nav').classList.remove('active');
-  });
-});
-</script>
 </body>
 </html>

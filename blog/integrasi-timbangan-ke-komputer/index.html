@@ -6,14 +6,27 @@
   <title>Cara Integrasi Timbangan ke Komputer: Panduan RS232, USB, TCP/IP | TimbanganPresisi</title>
   <meta name="description" content="Panduan lengkap cara menghubungkan timbangan ke komputer via RS232, USB, dan TCP/IP. Termasuk setting baudrate, data bit, dan troubleshooting.">
   <link rel="canonical" href="https://www.timbanganpresisi.com/blog/integrasi-timbangan-ke-komputer/">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="TimbanganPresisi.com">
   <meta property="og:title" content="Cara Integrasi Timbangan ke Komputer: RS232, USB, TCP/IP">
   <meta property="og:description" content="Panduan teknis menghubungkan timbangan ke komputer via berbagai protokol.">
-  <meta property="og:type" content="article">
   <meta property="og:url" content="https://www.timbanganpresisi.com/blog/integrasi-timbangan-ke-komputer/">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Font: IBM Plex Sans (400/500/600/700) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Satu CSS untuk semua halaman -->
   <link rel="stylesheet" href="/css/style.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/img/favicon.svg">
+
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"Article","headline":"Cara Integrasi Timbangan ke Komputer: Panduan RS232, USB, TCP/IP","author":{"@type":"Organization","name":"TimbanganPresisi"},"publisher":{"@type":"Organization","name":"TimbanganPresisi"},"datePublished":"2025-06-05","description":"Panduan teknis menghubungkan timbangan ke komputer."}
   </script>
@@ -23,160 +36,248 @@
 </head>
 <body>
 
-<header class="site-header">
-  <div class="header-inner">
-    <a class="site-logo" href="/">Timbangan<span>Presisi</span></a>
-    <button class="nav-toggle" onclick="document.querySelector('.main-nav').classList.toggle('active')" aria-label="Toggle menu">☰</button>
-    <nav class="main-nav">
-      <a href="/software-timbangan/">Software Timbangan</a>
-      <a href="/integrasi-loadcell/">Integrasi Loadcell</a>
-      <a href="/pos-timbangan/">POS Timbangan</a>
-      <a href="/software-jembatan-timbang/">Jembatan Timbang</a>
-      <a class="nav-cta" href="https://wa.me/6281916364503?text=Halo%2C%20saya%20ingin%20konsultasi%20tentang%20software%20timbangan">💬 Konsultasi Gratis</a>
-    </nav>
-  </div>
-</header>
+  <a class="skip-link" href="#main">Lewati ke konten utama</a>
 
-<main class="page-content">
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a class="brand" href="/">Timbangan<span>Presisi</span></a>
 
-<div class="article-header">
-  <h1>Cara Integrasi Timbangan ke Komputer: Panduan Lengkap RS232, USB, dan TCP/IP</h1>
-  <p class="article-meta">TimbanganPresisi · Juni 2025 · 7 menit baca</p>
-</div>
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Buka menu navigasi">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-<div class="article-content">
+      <nav class="main-nav" id="main-nav" aria-label="Navigasi utama">
+        <a href="/software-timbangan/">Software Timbangan</a>
+        <a href="/#perangkat">Perangkat Timbangan</a>
+        <a href="/blog/" class="is-active">Blog</a>
+        <a class="btn btn-wa btn-sm" href="https://wa.me/6281916364503" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Konsultasi Gratis
+        </a>
+      </nav>
+    </div>
+  </header>
 
-<p>Menghubungkan timbangan ke komputer adalah langkah fundamental dalam digitalisasi penimbangan. Begitu timbangan terkoneksi, data berat bisa dibaca otomatis oleh software tanpa input manual.</p>
+  <main id="main">
 
-<p>Artikel ini membahas 3 metode koneksi paling umum beserta kelebihan dan cara kerjanya.</p>
+    <div class="page-head">
+      <div class="container">
+        <h1>Cara Integrasi Timbangan ke Komputer: Panduan Lengkap RS232, USB, dan TCP/IP</h1>
+        <p>TimbanganPresisi · Juni 2025 · 7 menit baca</p>
+      </div>
+    </div>
 
-<h2>Metode 1: RS232 (Serial Port)</h2>
+    <section class="section section--tight">
+      <div class="container">
+        <div class="prose">
 
-<p>RS232 adalah protokol komunikasi paling klasik dan masih paling banyak digunakan pada indicator timbangan. Hampir semua indicator punya port RS232.</p>
+          <p>Menghubungkan timbangan ke komputer adalah langkah fundamental dalam digitalisasi penimbangan. Begitu timbangan terkoneksi, data berat bisa dibaca otomatis oleh software tanpa input manual.</p>
 
-<h3>Cara Kerja</h3>
-<p>Indicator mengirim data berat secara serial (satu bit per waktu) melalui kabel DB9 atau DB25. Komputer membaca data ini melalui COM port.</p>
+          <p>Artikel ini membahas 3 metode koneksi paling umum beserta kelebihan dan cara kerjanya.</p>
 
-<h3>Parameter yang Perlu Di-setting</h3>
-<ul>
-  <li><strong>Baud Rate</strong> — Kecepatan komunikasi (umum: 9600, 19200)</li>
-  <li><strong>Data Bits</strong> — Biasanya 8</li>
-  <li><strong>Parity</strong> — None, Even, atau Odd (tergantung merk)</li>
-  <li><strong>Stop Bits</strong> — 1 atau 2</li>
-  <li><strong>Mode</strong> — Continuous (indicator terus kirim data) atau Command (software minta data)</li>
-</ul>
+          <h2>Metode 1: RS232 (Serial Port)</h2>
 
-<h3>Kelebihan RS232</h3>
-<ul>
-  <li>Paling universal — semua indicator punya</li>
-  <li>Stabil dan reliable untuk koneksi point-to-point</li>
-  <li>Tidak perlu driver khusus</li>
-</ul>
+          <p>RS232 adalah protokol komunikasi paling klasik dan masih paling banyak digunakan pada indicator timbangan. Hampir semua indicator punya port RS232.</p>
 
-<h3>Kekurangan</h3>
-<ul>
-  <li>Jarak maksimal ~15 meter</li>
-  <li>Komputer modern jarang punya serial port (perlu USB-to-Serial converter)</li>
-  <li>Satu port hanya untuk satu device</li>
-</ul>
+          <h3>Cara Kerja</h3>
+          <p>Indicator mengirim data berat secara serial (satu bit per waktu) melalui kabel DB9 atau DB25. Komputer membaca data ini melalui COM port.</p>
 
-<h2>Metode 2: USB</h2>
+          <h3>Parameter yang Perlu Di-setting</h3>
+          <ul>
+            <li><strong>Baud Rate</strong> — Kecepatan komunikasi (umum: 9600, 19200)</li>
+            <li><strong>Data Bits</strong> — Biasanya 8</li>
+            <li><strong>Parity</strong> — None, Even, atau Odd (tergantung merk)</li>
+            <li><strong>Stop Bits</strong> — 1 atau 2</li>
+            <li><strong>Mode</strong> — Continuous (indicator terus kirim data) atau Command (software minta data)</li>
+          </ul>
 
-<p>Beberapa indicator modern sudah punya port USB langsung. Ada 2 mode:</p>
+          <h3>Kelebihan RS232</h3>
+          <ul>
+            <li>Paling universal — semua indicator punya</li>
+            <li>Stabil dan reliable untuk koneksi point-to-point</li>
+            <li>Tidak perlu driver khusus</li>
+          </ul>
 
-<h3>USB Virtual COM Port (VCP)</h3>
-<p>Indicator terhubung via USB tapi muncul sebagai COM port di komputer. Cara kerjanya sama persis dengan RS232, hanya medianya USB. Butuh install driver dari merk indicator.</p>
+          <h3>Kekurangan</h3>
+          <ul>
+            <li>Jarak maksimal ~15 meter</li>
+            <li>Komputer modern jarang punya serial port (perlu USB-to-Serial converter)</li>
+            <li>Satu port hanya untuk satu device</li>
+          </ul>
 
-<h3>USB HID (Human Interface Device)</h3>
-<p>Indicator berperilaku seperti keyboard — data berat "diketik" langsung ke program yang aktif. Tanpa perlu driver atau software khusus.</p>
+          <h2>Metode 2: USB</h2>
 
-<h3>Kelebihan USB</h3>
-<ul>
-  <li>Semua komputer punya port USB</li>
-  <li>Kecepatan lebih tinggi</li>
-  <li>Plug and play (terutama mode HID)</li>
-</ul>
+          <p>Beberapa indicator modern sudah punya port USB langsung. Ada 2 mode:</p>
 
-<h3>Kekurangan</h3>
-<ul>
-  <li>Jarak terbatas (~5 meter tanpa hub)</li>
-  <li>Mode HID kurang fleksibel (tidak bisa baca raw data)</li>
-  <li>Kadang perlu driver yang kompatibel</li>
-</ul>
+          <h3>USB Virtual COM Port (VCP)</h3>
+          <p>Indicator terhubung via USB tapi muncul sebagai COM port di komputer. Cara kerjanya sama persis dengan RS232, hanya medianya USB. Butuh install driver dari merk indicator.</p>
 
-<h2>Metode 3: TCP/IP (Ethernet)</h2>
+          <h3>USB HID (Human Interface Device)</h3>
+          <p>Indicator berperilaku seperti keyboard — data berat "diketik" langsung ke program yang aktif. Tanpa perlu driver atau software khusus.</p>
 
-<p>Untuk kebutuhan jarak jauh atau multi-timbangan dalam satu jaringan, TCP/IP adalah pilihan terbaik.</p>
+          <h3>Kelebihan USB</h3>
+          <ul>
+            <li>Semua komputer punya port USB</li>
+            <li>Kecepatan lebih tinggi</li>
+            <li>Plug and play (terutama mode HID)</li>
+          </ul>
 
-<h3>Cara Kerja</h3>
-<p>Indicator terhubung ke jaringan via kabel ethernet. Software di komputer manapun dalam jaringan bisa membaca data berat melalui IP address dan port tertentu.</p>
+          <h3>Kekurangan</h3>
+          <ul>
+            <li>Jarak terbatas (~5 meter tanpa hub)</li>
+            <li>Mode HID kurang fleksibel (tidak bisa baca raw data)</li>
+            <li>Kadang perlu driver yang kompatibel</li>
+          </ul>
 
-<h3>Kelebihan TCP/IP</h3>
-<ul>
-  <li>Jarak tidak terbatas (selama ada jaringan)</li>
-  <li>Bisa diakses dari banyak komputer</li>
-  <li>Cocok untuk monitoring terpusat</li>
-  <li>Support multi-timbangan dalam satu software</li>
-</ul>
+          <h2>Metode 3: TCP/IP (Ethernet)</h2>
 
-<h3>Kekurangan</h3>
-<ul>
-  <li>Tergantung stabilitas jaringan</li>
-  <li>Perlu konfigurasi IP dan firewall</li>
-  <li>Tidak semua indicator punya port ethernet bawaan (perlu serial-to-ethernet converter)</li>
-</ul>
+          <p>Untuk kebutuhan jarak jauh atau multi-timbangan dalam satu jaringan, TCP/IP adalah pilihan terbaik.</p>
 
-<h2>Perbandingan Singkat</h2>
+          <h3>Cara Kerja</h3>
+          <p>Indicator terhubung ke jaringan via kabel ethernet. Software di komputer manapun dalam jaringan bisa membaca data berat melalui IP address dan port tertentu.</p>
 
-<div class="lp-grid">
-  <div class="lp-grid-item"><strong>RS232</strong><span>Universal, stabil, jarak pendek. Cocok untuk 1 timbangan di dekat komputer.</span></div>
-  <div class="lp-grid-item"><strong>USB</strong><span>Modern, mudah, plug-and-play. Cocok untuk setup sederhana.</span></div>
-  <div class="lp-grid-item"><strong>TCP/IP</strong><span>Jarak jauh, multi-device, monitoring terpusat. Cocok untuk pabrik besar.</span></div>
-</div>
+          <h3>Kelebihan TCP/IP</h3>
+          <ul>
+            <li>Jarak tidak terbatas (selama ada jaringan)</li>
+            <li>Bisa diakses dari banyak komputer</li>
+            <li>Cocok untuk monitoring terpusat</li>
+            <li>Support multi-timbangan dalam satu software</li>
+          </ul>
 
-<h2>Troubleshooting Umum</h2>
+          <h3>Kekurangan</h3>
+          <ul>
+            <li>Tergantung stabilitas jaringan</li>
+            <li>Perlu konfigurasi IP dan firewall</li>
+            <li>Tidak semua indicator punya port ethernet bawaan (perlu serial-to-ethernet converter)</li>
+          </ul>
 
-<ul>
-  <li><strong>Data tidak masuk</strong> — Cek baudrate dan parameter serial harus sama di kedua sisi</li>
-  <li><strong>Data acak/garbage</strong> — Baudrate tidak cocok, atau kabel cross/straight tertukar</li>
-  <li><strong>COM port tidak terdeteksi</strong> — Install ulang driver USB-to-Serial</li>
-  <li><strong>Koneksi TCP putus-putus</strong> — Cek kabel jaringan, pastikan IP static</li>
-</ul>
+          <h2>Perbandingan Singkat</h2>
 
-<h2>Kesimpulan</h2>
+        </div>
 
-<p>Pilihan metode integrasi tergantung pada jarak, jumlah timbangan, dan infrastruktur yang sudah ada. Untuk kebanyakan kasus standar, RS232 dengan USB converter sudah cukup. Untuk skala besar, gunakan TCP/IP.</p>
+        <ul class="feature-list">
+          <li><strong>RS232</strong><small>Universal, stabil, jarak pendek. Cocok untuk 1 timbangan di dekat komputer.</small></li>
+          <li><strong>USB</strong><small>Modern, mudah, plug-and-play. Cocok untuk setup sederhana.</small></li>
+          <li><strong>TCP/IP</strong><small>Jarak jauh, multi-device, monitoring terpusat. Cocok untuk pabrik besar.</small></li>
+        </ul>
 
-<p>Yang terpenting: pastikan software timbangan Anda support protokol yang digunakan dan bisa dikonfigurasi sesuai setting indicator Anda.</p>
+        <div class="prose">
 
-</div>
+          <h2>Troubleshooting Umum</h2>
 
-<div class="lp-cta">
-  <h2>Butuh Bantuan Integrasi Timbangan?</h2>
-  <p>Kami sudah handle ratusan merk dan model. Ceritakan setup Anda.</p>
-  <a href="https://wa.me/6281916364503?text=Halo%2C%20saya%20butuh%20bantuan%20integrasi%20timbangan%20ke%20komputer">💬 Konsultasi Gratis</a>
-</div>
+          <ul>
+            <li><strong>Data tidak masuk</strong> — Cek baudrate dan parameter serial harus sama di kedua sisi</li>
+            <li><strong>Data acak/garbage</strong> — Baudrate tidak cocok, atau kabel cross/straight tertukar</li>
+            <li><strong>COM port tidak terdeteksi</strong> — Install ulang driver USB-to-Serial</li>
+            <li><strong>Koneksi TCP putus-putus</strong> — Cek kabel jaringan, pastikan IP static</li>
+          </ul>
 
-<div class="article-nav">
-  <p><strong>Baca juga:</strong></p>
-  <ul>
-    <li><a href="/integrasi-loadcell/">Layanan Integrasi Loadcell TimbanganPresisi</a></li>
-    <li><a href="/blog/cara-memilih-software-timbangan-digital/">Cara Memilih Software Timbangan Digital yang Tepat</a></li>
-  </ul>
-</div>
+          <h2>Kesimpulan</h2>
 
-</main>
+          <p>Pilihan metode integrasi tergantung pada jarak, jumlah timbangan, dan infrastruktur yang sudah ada. Untuk kebanyakan kasus standar, RS232 dengan USB converter sudah cukup. Untuk skala besar, gunakan TCP/IP.</p>
 
-<footer class="site-footer">
-  <div class="footer-grid">
-    <div class="footer-col"><h4>TimbanganPresisi</h4><p>Solusi software timbangan digital terintegrasi untuk industri Indonesia.</p></div>
-    <div class="footer-col"><h4>Produk</h4><a href="/software-timbangan/">Software Timbangan</a><a href="/integrasi-loadcell/">Integrasi Loadcell</a><a href="/pos-timbangan/">POS Timbangan</a><a href="/software-jembatan-timbang/">Jembatan Timbang</a><a href="/barcode-timbangan/">Barcode Timbangan</a></div>
-    <div class="footer-col"><h4>Industri</h4><a href="#">Gudang &amp; Logistik</a><a href="#">Pabrik &amp; Manufaktur</a><a href="#">Retail &amp; Toko</a><a href="#">Distributor</a></div>
-    <div class="footer-col"><h4>Hubungi Kami</h4><a href="https://wa.me/6281916364503">💬 WhatsApp</a><a href="mailto:info@timbanganpresisi.com">📧 Email</a></div>
-  </div>
-  <div class="footer-bottom">© 2025 TimbanganPresisi.com. All rights reserved.</div>
-</footer>
+          <p>Yang terpenting: pastikan software timbangan Anda support protokol yang digunakan dan bisa dikonfigurasi sesuai setting indicator Anda.</p>
 
-<a class="wa-float" href="https://wa.me/6281916364503?text=Halo%2C%20saya%20ingin%20konsultasi%20tentang%20software%20timbangan" aria-label="Chat WhatsApp" target="_blank" rel="noopener">💬</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container">
+        <h2 class="section-title">Butuh Bantuan Integrasi Timbangan?</h2>
+        <p class="section-lead">Kami sudah handle ratusan merk dan model. Ceritakan setup Anda.</p>
+        <a class="btn btn-wa" href="https://wa.me/6281916364503?text=Halo%2C%20saya%20butuh%20bantuan%20integrasi%20timbangan%20ke%20komputer" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Konsultasi Gratis
+        </a>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <div class="container">
+        <div class="prose">
+          <p><strong>Baca juga:</strong></p>
+          <ul>
+            <li><a href="/integrasi-loadcell/">Layanan Integrasi Loadcell TimbanganPresisi</a></li>
+            <li><a href="/blog/cara-memilih-software-timbangan-digital/">Cara Memilih Software Timbangan Digital yang Tepat</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="/">Timbangan<span>Presisi</span></a>
+          <p>Software timbangan untuk pabrik, tambang, dan perkebunan Indonesia: jembatan timbang, check weighing, POS timbangan, dan integrasi loadcell.</p>
+        </div>
+        <nav class="footer-col" aria-label="Produk">
+          <h2>Produk</h2>
+          <ul>
+            <li><a href="/jto-pro/">Whale JTO Pro</a></li>
+            <li><a href="/jto-standard/">Whale JTO Standard</a></li>
+            <li><a href="/jto-smart-scanner/">Whale JTO Smart Scanner</a></li>
+            <li><a href="/jto-multi-item/">Whale JTO Multi Item</a></li>
+            <li><a href="/whale-cwo/">Whale CWO</a></li>
+            <li><a href="/pos-timbangan/">Whale POS</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-col" aria-label="Laman">
+          <h2>Laman</h2>
+          <ul>
+            <li><a href="/software-jembatan-timbang/">Jembatan Timbang</a></li>
+            <li><a href="/software-timbangan/">Software Timbangan</a></li>
+            <li><a href="/pos-timbangan/">POS Timbangan</a></li>
+            <li><a href="/barcode-timbangan/">Barcode</a></li>
+            <li><a href="/integrasi-loadcell/">Integrasi Loadcell</a></li>
+            <li><a href="/blog/">Blog</a>
+        <a href="/tentang-kami/">About Us</a></li>
+          </ul>
+        </nav>
+        <div class="footer-col" id="kontak">
+          <h2>Hubungi Kami</h2>
+          <ul>
+            <li>
+              <a class="footer-contact" href="https://wa.me/6281916364503" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                WA 6281916364503
+              </a>
+            </li>
+            <li>
+              <a class="footer-contact" href="mailto:info@timbanganpresisi.com">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+                info@timbanganpresisi.com
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        © 2026 PT Sentra Solusi Presisi · TimbanganPresisi.com
+      </div>
+    </div>
+  </footer>
+
+  <a class="wa-float" href="https://wa.me/6281916364503" target="_blank" rel="noopener" aria-label="Chat WhatsApp">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+  </a>
+
+  <script>
+    (function () {
+      var header = document.getElementById('site-header');
+      var toggle = document.getElementById('nav-toggle');
+      toggle.addEventListener('click', function () {
+        var open = header.classList.toggle('nav-open');
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        toggle.setAttribute('aria-label', open ? 'Tutup menu navigasi' : 'Buka menu navigasi');
+      });
+    })();
+  </script>
+
 </body>
 </html>
