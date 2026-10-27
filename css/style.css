@@ -934,13 +934,13 @@ h1, h2, h3, h4 {
   width: 76px;
   height: 76px;
   border-radius: 19px;
-  background: #0A1628;
+  background: #FFFFFF;
   display: flex;
   align-items: center;
   justify-content: center;
   box-shadow: 0 12px 22px rgba(0, 0, 0, .2);
 }
-.lt .ic svg { width: 56px; height: 56px; }
+.lt .ic img { width: 88%; height: 88%; object-fit: contain; }
 .lt .nm { font-weight: 700; color: var(--ink); font-size: 1rem; letter-spacing: .015em; }
 .lt .nm span { color: var(--link); }
 
@@ -1007,3 +1007,7 @@ h1, h2, h3, h4 {
   background: rgba(7, 17, 32, .82); color: #fff;
   padding: 5px 12px; border-radius: 999px; font-size: .82rem; font-weight: 700;
 }
+
+/* Logo asli di header & footer */
+.brand { display: inline-flex; align-items: center; gap: 10px; }
+.brand .brand-mark { height: 34px; width: auto; display: block; }
