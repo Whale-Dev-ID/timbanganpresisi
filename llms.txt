@@ -1,0 +1,32 @@
+# TimbanganPresisi
+
+> TimbanganPresisi adalah situs resmi PT Sentra Solusi Presisi, penyedia solusi sistem penimbangan dan otomatisasi industri di Indonesia. Produk utamanya adalah keluarga software jembatan timbang Whale JTO (Standard, Pro dengan CCTV, Smart Scanner barcode, Multi Item) dan software check weighing Whale CWO untuk QC lini produksi. Semua software berjalan offline di jaringan lokal (LAN) dan terhubung ke indikator timbangan via serial/COM.
+
+## Produk
+
+- [Whale JTO Pro](https://www.timbanganpresisi.com/jto-pro/): Software jembatan timbang varian CCTV — live view kamera RTSP, snapshot otomatis per transaksi terhubung nomor tiket, dashboard web dan aplikasi desktop.
+- [Whale JTO Standard](https://www.timbanganpresisi.com/jto-standard/): Software jembatan timbang desktop untuk transaksi dua kali timbang (masuk-keluar), netto otomatis, tiket dan laporan.
+- [Whale JTO Smart Scanner](https://www.timbanganpresisi.com/jto-smart-scanner/): Varian barcode — kode scan unik terikat data transaksi, mempercepat pemanggilan data timbang.
+- [Whale JTO Multi Item](https://www.timbanganpresisi.com/jto-multi-item/): Varian untuk pemuatan bertahap banyak item dalam satu transaksi, lengkap dengan harga per kg dan laporan rekap.
+- [Whale CWO](https://www.timbanganpresisi.com/whale-cwo/): Software check weighing untuk QC timbangan di lini produksi/pengemasan — mode per item (qty) dan penimbangan, target berat, toleransi, dan status lolos/gagal.
+
+## Panduan & Layanan
+
+- [Software Jembatan Timbang](https://www.timbanganpresisi.com/software-jembatan-timbang/): Penjelasan lengkap alur software jembatan timbang dan perbandingan antar varian Whale JTO.
+- [Software Timbangan](https://www.timbanganpresisi.com/software-timbangan/): Gambaran solusi software timbangan digital untuk gudang, pabrik, dan distributor.
+- [Integrasi Loadcell](https://www.timbanganpresisi.com/integrasi-loadcell/): Layanan menghubungkan loadcell dan indikator timbangan ke komputer dan software.
+- [Barcode Timbangan](https://www.timbanganpresisi.com/barcode-timbangan/): Penerapan barcode pada proses penimbangan dan pelacakan produk.
+- [POS Timbangan](https://www.timbanganpresisi.com/pos-timbangan/): Informasi sistem kasir terintegrasi timbangan.
+- [Tentang Kami](https://www.timbanganpresisi.com/tentang-kami/): Profil PT Sentra Solusi Presisi, perusahaan di balik TimbanganPresisi dan keluarga software Whale.
+
+## Artikel
+
+- [Cara Memilih Software Timbangan Digital](https://www.timbanganpresisi.com/blog/cara-memilih-software-timbangan-digital/): Panduan fitur wajib dan kompatibilitas sebelum membeli software timbangan.
+- [Integrasi Timbangan ke Komputer](https://www.timbanganpresisi.com/blog/integrasi-timbangan-ke-komputer/): Panduan RS232, USB, dan TCP/IP untuk menghubungkan timbangan ke komputer.
+- [Manfaat Software Jembatan Timbang](https://www.timbanganpresisi.com/blog/manfaat-software-jembatan-timbang/): Lima manfaat software jembatan timbang untuk pabrik dan tambang.
+
+## Kontak
+
+- WhatsApp Admin Sales: +62-819-1636-4503 (https://wa.me/6281916364503)
+- Email: info@timbanganpresisi.com
+- Alamat: Jl. Kemandoran VII RT.10 RW.03, Grogol Utara, Kebayoran Lama, Jakarta Selatan 12210, Indonesia

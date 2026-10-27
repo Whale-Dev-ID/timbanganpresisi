@@ -3,156 +3,518 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Software Timbangan Digital #1 Indonesia | TimbanganPresisi.com</title>
-  <meta name="description" content="Solusi software timbangan digital terintegrasi untuk gudang, pabrik, dan retail. Akurat, cepat, dan terhubung langsung ke sistem Anda. Konsultasi gratis.">
+
+  <title>Software Timbangan Industri Indonesia | TimbanganPresisi.com</title>
+
+  <meta name="description" content="Katalog software timbangan digital untuk industri Indonesia: jembatan timbang, check weighing, dan POS timbangan. Offline, terhubung semua merk indikator. Konsultasi gratis.">
+
   <link rel="canonical" href="https://www.timbanganpresisi.com/">
-  <meta property="og:title" content="Software Timbangan Digital #1 Indonesia | TimbanganPresisi.com">
-  <meta property="og:description" content="Solusi software timbangan digital terintegrasi untuk gudang, pabrik, dan retail.">
+
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="TimbanganPresisi.com">
+  <meta property="og:title" content="Software Timbangan Industri Indonesia | TimbanganPresisi.com">
+  <meta property="og:description" content="Katalog software timbangan digital untuk industri Indonesia: jembatan timbang, check weighing, dan POS timbangan. Offline, terhubung semua merk indikator. Konsultasi gratis.">
   <meta property="og:url" content="https://www.timbanganpresisi.com/">
+  <meta property="og:image" content="https://www.timbanganpresisi.com/img/jto-pro/desktop-app.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Font: IBM Plex Sans (400/500/600/700).
+       DILARANG: Inter, Roboto, Fraunces, Geist, Plus Jakarta Sans, Space Grotesk. -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Satu CSS untuk semua halaman -->
   <link rel="stylesheet" href="/css/style.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/img/favicon.svg">
+
+  <!-- JSON-LD: BreadcrumbList + FAQPage -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "TimbanganPresisi",
-    "url": "https://www.timbanganpresisi.com",
-    "description": "Solusi software timbangan digital terintegrasi untuk industri Indonesia",
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+62-812-3456-7890",
-      "contactType": "sales"
-    }
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Beranda",
+        "item": "https://www.timbanganpresisi.com/"
+      }
+    ]
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Apa itu software jembatan timbang?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Software yang mengelola penimbangan kendaraan secara digital: mencatat bruto, tara, dan netto otomatis, menyimpan riwayat transaksi, dan mencetak tiket timbang."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Apakah bisa digunakan tanpa internet?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ya. Semua varian Whale JTO dirancang untuk berjalan di jaringan lokal tanpa koneksi internet — operasional timbang tidak tergantung internet sama sekali."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Merk indikator apa yang didukung?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Semua varian mendukung koneksi universal via Serial/COM — kompatibel dengan AND, Ohaus, CAS, Mettler Toledo, Excell, dan lainnya."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Varian mana yang cocok untuk saya?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Whale JTO Standard untuk operasional timbang masuk/keluar harian yang fleksibel. Whale JTO Smart Scanner untuk volume kendaraan tinggi dengan input barcode. Whale JTO Multi Item untuk kendaraan bermuatan campuran. Whale JTO Pro untuk skala menengah hingga enterprise dengan dokumentasi CCTV dan dashboard monitoring dari browser. Whale CWO untuk check weighing di QC dan packaging line. Whale POS untuk toko dan retail berbasis berat dengan kasir terintegrasi timbangan."
+        }
+      }
+    ]
+  }
+  </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "TimbanganPresisi",
+  "legalName": "PT Sentra Solusi Presisi",
+  "alternateName": "SSP",
+  "url": "https://www.timbanganpresisi.com/",
+  "logo": "https://www.timbanganpresisi.com/img/favicon.svg",
+  "description": "Solusi sistem penimbangan dan otomatisasi industri: software jembatan timbang (Whale JTO Standard, Pro, Smart Scanner, Multi Item) dan software check weighing Whale CWO, lengkap dengan integrasi indikator, CCTV, dan barcode.",
+  "email": "info@timbanganpresisi.com",
+  "telephone": "+62-819-1636-4503",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Jl. Kemandoran VII RT.10 RW.03, Grogol Utara, Kebayoran Lama",
+    "addressLocality": "Jakarta Selatan",
+    "postalCode": "12210",
+    "addressCountry": "ID"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+62-819-1636-4503",
+    "contactType": "sales",
+    "areaServed": "ID",
+    "availableLanguage": [
+      "id"
+    ]
+  }
+}
+</script>
 </head>
 <body>
 
-<!-- HEADER -->
-<header class="site-header">
-  <div class="header-inner">
-    <a class="site-logo" href="/">Timbangan<span>Presisi</span></a>
-    <button class="nav-toggle" onclick="document.querySelector('.main-nav').classList.toggle('active')" aria-label="Toggle menu">☰</button>
-    <nav class="main-nav">
-      <a href="/software-timbangan/">Software Timbangan</a>
-      <a href="/integrasi-loadcell/">Integrasi Loadcell</a>
-      <a href="/pos-timbangan/">POS Timbangan</a>
-      <a href="/software-jembatan-timbang/">Jembatan Timbang</a>
-      <a href="/blog/">Blog</a>
-      <a class="nav-cta" href="https://wa.me/6281916364503?text=Halo%2C%20saya%20ingin%20konsultasi%20tentang%20software%20timbangan">💬 Konsultasi Gratis</a>
-    </nav>
-  </div>
-</header>
+  <a class="skip-link" href="#main">Lewati ke konten utama</a>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="container">
-    <h1>Software Timbangan Digital #1 Indonesia</h1>
-    <p>Solusi penimbangan terintegrasi untuk gudang, pabrik, dan retail. Akurat, cepat, dan terhubung langsung ke sistem Anda.</p>
-    <a class="hero-cta" href="https://wa.me/6281916364503?text=Halo%2C%20saya%20ingin%20konsultasi%20tentang%20software%20timbangan">💬 Konsultasi Gratis Sekarang</a>
-  </div>
-</section>
+  <!-- HEADER — VERBATIM dari template -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a class="brand" href="/">Timbangan<span>Presisi</span></a>
 
-<!-- TRUST BADGES -->
-<div class="trust-badges">
-  <div class="trust-badge">✅ 500+ Client Aktif</div>
-  <div class="trust-badge">⚡ Setup Cepat 1 Hari</div>
-  <div class="trust-badge">🔧 Support Teknis 24/7</div>
-  <div class="trust-badge">🏭 Untuk Gudang &amp; Pabrik</div>
-</div>
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Buka menu navigasi">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-<!-- PRODUCTS -->
-<section class="section">
-  <div class="container">
-    <h2 class="section-title">Solusi Kami</h2>
-    <p class="section-subtitle">Pilih solusi yang sesuai kebutuhan bisnis Anda</p>
-    <div class="product-grid">
-      <div class="product-card">
-        <h3>⚖️ Software Timbangan</h3>
-        <p>Sistem penimbangan digital terintegrasi untuk gudang dan pabrik. Akurasi tinggi dengan laporan otomatis.</p>
-        <a href="/software-timbangan/">Pelajari Selengkapnya →</a>
+      <nav class="main-nav" id="main-nav" aria-label="Navigasi utama">
+        <a href="/software-timbangan/">Software Timbangan</a>
+        <a href="/#perangkat">Perangkat Timbangan</a>
+        <a href="/blog/">Blog</a>
+        <a href="/tentang-kami/">About Us</a>
+        <a class="btn btn-wa btn-sm" href="https://wa.me/6281916364503" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Konsultasi Gratis
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO: slideshow foto proyek + pengenalan PT -->
+    <div class="container">
+      <section class="hero" aria-label="Pengantar TimbanganPresisi">
+        <div class="slide"><img src="/img/hero/hero-1.jpg" alt="Truk crane terparkir penuh di atas dek jembatan timbang" fetchpriority="high"></div>
+        <div class="slide"><img src="/img/hero/hero-2.jpg" alt="Truk ditimbang di atas timbangan poros portabel oleh tim lapangan" loading="lazy"></div>
+        <div class="slide"><img src="/img/hero/hero-3.jpg" alt="Truk boks di atas timbangan poros portabel di area pabrik" loading="lazy"></div>
+        <div class="slide"><img src="/img/hero/hero-4.jpg" alt="Timbangan lantai gudang dengan display LED besar" loading="lazy"></div>
+        <div class="slide"><img src="/img/hero/hero-5.jpg" alt="Truk Hino 500 di atas jembatan timbang di lokasi pelanggan" loading="lazy"></div>
+        <div class="panel">
+          <h1>Solusi Sistem Penimbangan &amp; Otomatisasi Industri</h1>
+          <p><strong>PT Sentra Solusi Presisi (SSP)</strong> menyediakan software jembatan timbang Whale JTO, sistem check weighing, dan perangkat timbangan untuk pabrik, gudang, dan tambang. Berjalan offline di jaringan lokal, terintegrasi indikator, CCTV, dan barcode.</p>
+          <div class="cta">
+            <a class="btn btn-wa" href="https://wa.me/6281916364503?text=Halo%2C%20saya%20lihat%20website%20TimbanganPresisi%2C%20saya%20ingin%20konsultasi%20tentang%20software%20timbangan" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              Chat WhatsApp
+            </a>
+            <a class="btn btn-ghost--light" href="#software">Lihat Katalog</a>
+          </div>
+        </div>
+        <div class="dots" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+        <div class="cap">Dokumentasi proyek SSP</div>
+      </section>
+    </div>
+
+    <!-- SOFTWARE TIMBANGAN -->
+    <section class="section section--tight" id="software">
+      <div class="container">
+        <div class="slider-head">
+          <h2 class="section-title">Software Timbangan</h2>
+          <div class="snav" data-snav></div>
+        </div>
+        <div class="slider" data-slider>
+          <div class="viewport">
+            <div class="track">
+
+              <article class="mini-card">
+                <div class="lt">
+                  <div class="ic"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#fff" d="M11.5 3.2c1.2 1.8 1.9 3.2 1.9 4.5a1.9 1.9 0 1 1-3.8 0c0-1.3.7-2.7 1.9-4.5Z"/><path fill="#fff" d="M6.6 6c.9 1.4 1.4 2.4 1.4 3.3a1.45 1.45 0 1 1-2.9 0C5.1 8.4 5.7 7.4 6.6 6Z"/><path fill="#fff" d="M16.4 6c.9 1.4 1.4 2.4 1.4 3.3a1.45 1.45 0 1 1-2.9 0c0-.9.6-1.9 1.5-3.3Z"/><path fill="#fff" d="M4 25c0-6.5 5.5-11.5 14-12.2 6.5-.5 11.5.6 15 3.4 2.5-4.4 6.5-8 11.5-9.7-.7 3.5-.3 6.7 1.5 10-3.2 2.7-6.7 3.3-9.4 1.9-.8 6.4-7 12-16.6 12.8C11 31.8 4 29.5 4 25Z"/><path fill="#fff" d="M18 30.6c1.6 3.2 4.4 5.2 7.8 5.6-1.4-3-3.4-5-5.6-6.2-.8.1-1.5.3-2.2.6Z"/><path d="M7.5 27.8c6 2.6 15.5 2.8 22-.6" fill="none" stroke="#C1EBE9" stroke-width="2" stroke-linecap="round"/><circle cx="10.5" cy="21" r="1.6" fill="#0A1628"/></svg></div>
+                  <div class="nm">JTO <span>Standard</span></div>
+                </div>
+                <div class="body">
+                  <h3><a href="/jto-standard/"><span class="fam">Whale JTO</span> Standard</a></h3>
+                  <p class="desc">Software jembatan timbang desktop: dua kali timbang, netto otomatis, tiket &amp; laporan lengkap.</p>
+                  <a class="go" href="/jto-standard/">Lihat detail →</a>
+                </div>
+              </article>
+
+              <article class="mini-card">
+                <div class="lt">
+                  <div class="ic"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#fff" d="M11.5 3.2c1.2 1.8 1.9 3.2 1.9 4.5a1.9 1.9 0 1 1-3.8 0c0-1.3.7-2.7 1.9-4.5Z"/><path fill="#fff" d="M6.6 6c.9 1.4 1.4 2.4 1.4 3.3a1.45 1.45 0 1 1-2.9 0C5.1 8.4 5.7 7.4 6.6 6Z"/><path fill="#fff" d="M16.4 6c.9 1.4 1.4 2.4 1.4 3.3a1.45 1.45 0 1 1-2.9 0c0-.9.6-1.9 1.5-3.3Z"/><path fill="#fff" d="M4 25c0-6.5 5.5-11.5 14-12.2 6.5-.5 11.5.6 15 3.4 2.5-4.4 6.5-8 11.5-9.7-.7 3.5-.3 6.7 1.5 10-3.2 2.7-6.7 3.3-9.4 1.9-.8 6.4-7 12-16.6 12.8C11 31.8 4 29.5 4 25Z"/><path fill="#fff" d="M18 30.6c1.6 3.2 4.4 5.2 7.8 5.6-1.4-3-3.4-5-5.6-6.2-.8.1-1.5.3-2.2.6Z"/><path d="M7.5 27.8c6 2.6 15.5 2.8 22-.6" fill="none" stroke="#C1EBE9" stroke-width="2" stroke-linecap="round"/><circle cx="10.5" cy="21" r="1.6" fill="#0A1628"/></svg></div>
+                  <div class="nm">JTO <span>Pro</span></div>
+                </div>
+                <div class="body">
+                  <h3><a href="/jto-pro/"><span class="fam">Whale JTO</span> Pro — CCTV</a></h3>
+                  <p class="desc">Varian CCTV: live view kamera, snapshot otomatis per tiket, dashboard web &amp; desktop.</p>
+                  <a class="go" href="/jto-pro/">Lihat detail →</a>
+                </div>
+              </article>
+
+              <article class="mini-card">
+                <div class="lt">
+                  <div class="ic"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#fff" d="M11.5 3.2c1.2 1.8 1.9 3.2 1.9 4.5a1.9 1.9 0 1 1-3.8 0c0-1.3.7-2.7 1.9-4.5Z"/><path fill="#fff" d="M6.6 6c.9 1.4 1.4 2.4 1.4 3.3a1.45 1.45 0 1 1-2.9 0C5.1 8.4 5.7 7.4 6.6 6Z"/><path fill="#fff" d="M16.4 6c.9 1.4 1.4 2.4 1.4 3.3a1.45 1.45 0 1 1-2.9 0c0-.9.6-1.9 1.5-3.3Z"/><path fill="#fff" d="M4 25c0-6.5 5.5-11.5 14-12.2 6.5-.5 11.5.6 15 3.4 2.5-4.4 6.5-8 11.5-9.7-.7 3.5-.3 6.7 1.5 10-3.2 2.7-6.7 3.3-9.4 1.9-.8 6.4-7 12-16.6 12.8C11 31.8 4 29.5 4 25Z"/><path fill="#fff" d="M18 30.6c1.6 3.2 4.4 5.2 7.8 5.6-1.4-3-3.4-5-5.6-6.2-.8.1-1.5.3-2.2.6Z"/><path d="M7.5 27.8c6 2.6 15.5 2.8 22-.6" fill="none" stroke="#C1EBE9" stroke-width="2" stroke-linecap="round"/><circle cx="10.5" cy="21" r="1.6" fill="#0A1628"/></svg></div>
+                  <div class="nm"><span>Smart</span> Scanner</div>
+                </div>
+                <div class="body">
+                  <h3><a href="/jto-smart-scanner/"><span class="fam">Whale JTO</span> Smart Scanner</a></h3>
+                  <p class="desc">Varian barcode: kode scan unik terikat data transaksi, panggil data timbang dalam sekejap.</p>
+                  <a class="go" href="/jto-smart-scanner/">Lihat detail →</a>
+                </div>
+              </article>
+
+              <article class="mini-card">
+                <div class="lt">
+                  <div class="ic"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#fff" d="M11.5 3.2c1.2 1.8 1.9 3.2 1.9 4.5a1.9 1.9 0 1 1-3.8 0c0-1.3.7-2.7 1.9-4.5Z"/><path fill="#fff" d="M6.6 6c.9 1.4 1.4 2.4 1.4 3.3a1.45 1.45 0 1 1-2.9 0C5.1 8.4 5.7 7.4 6.6 6Z"/><path fill="#fff" d="M16.4 6c.9 1.4 1.4 2.4 1.4 3.3a1.45 1.45 0 1 1-2.9 0c0-.9.6-1.9 1.5-3.3Z"/><path fill="#fff" d="M4 25c0-6.5 5.5-11.5 14-12.2 6.5-.5 11.5.6 15 3.4 2.5-4.4 6.5-8 11.5-9.7-.7 3.5-.3 6.7 1.5 10-3.2 2.7-6.7 3.3-9.4 1.9-.8 6.4-7 12-16.6 12.8C11 31.8 4 29.5 4 25Z"/><path fill="#fff" d="M18 30.6c1.6 3.2 4.4 5.2 7.8 5.6-1.4-3-3.4-5-5.6-6.2-.8.1-1.5.3-2.2.6Z"/><path d="M7.5 27.8c6 2.6 15.5 2.8 22-.6" fill="none" stroke="#C1EBE9" stroke-width="2" stroke-linecap="round"/><circle cx="10.5" cy="21" r="1.6" fill="#0A1628"/></svg></div>
+                  <div class="nm">JTO <span>Multi Item</span></div>
+                </div>
+                <div class="body">
+                  <h3><a href="/jto-multi-item/"><span class="fam">Whale JTO</span> Multi Item</a></h3>
+                  <p class="desc">Pemuatan bertahap banyak item dalam satu transaksi, harga per kg, laporan rekap.</p>
+                  <a class="go" href="/jto-multi-item/">Lihat detail →</a>
+                </div>
+              </article>
+
+              <article class="mini-card">
+                <div class="lt">
+                  <div class="ic"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#fff" d="M11.5 3.2c1.2 1.8 1.9 3.2 1.9 4.5a1.9 1.9 0 1 1-3.8 0c0-1.3.7-2.7 1.9-4.5Z"/><path fill="#fff" d="M6.6 6c.9 1.4 1.4 2.4 1.4 3.3a1.45 1.45 0 1 1-2.9 0C5.1 8.4 5.7 7.4 6.6 6Z"/><path fill="#fff" d="M16.4 6c.9 1.4 1.4 2.4 1.4 3.3a1.45 1.45 0 1 1-2.9 0c0-.9.6-1.9 1.5-3.3Z"/><path fill="#fff" d="M4 25c0-6.5 5.5-11.5 14-12.2 6.5-.5 11.5.6 15 3.4 2.5-4.4 6.5-8 11.5-9.7-.7 3.5-.3 6.7 1.5 10-3.2 2.7-6.7 3.3-9.4 1.9-.8 6.4-7 12-16.6 12.8C11 31.8 4 29.5 4 25Z"/><path fill="#fff" d="M18 30.6c1.6 3.2 4.4 5.2 7.8 5.6-1.4-3-3.4-5-5.6-6.2-.8.1-1.5.3-2.2.6Z"/><path d="M7.5 27.8c6 2.6 15.5 2.8 22-.6" fill="none" stroke="#C1EBE9" stroke-width="2" stroke-linecap="round"/><circle cx="10.5" cy="21" r="1.6" fill="#0A1628"/></svg></div>
+                  <div class="nm">Whale <span>POS</span></div>
+                </div>
+                <div class="body">
+                  <h3><a href="/pos-timbangan/"><span class="fam">Whale</span> POS</a></h3>
+                  <p class="desc">Sistem kasir dengan timbangan terintegrasi untuk toko &amp; retail berbasis berat.</p>
+                  <a class="go" href="/pos-timbangan/">Lihat detail →</a>
+                </div>
+              </article>
+
+              <article class="mini-card">
+                <div class="lt">
+                  <div class="ic"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#fff" d="M11.5 3.2c1.2 1.8 1.9 3.2 1.9 4.5a1.9 1.9 0 1 1-3.8 0c0-1.3.7-2.7 1.9-4.5Z"/><path fill="#fff" d="M6.6 6c.9 1.4 1.4 2.4 1.4 3.3a1.45 1.45 0 1 1-2.9 0C5.1 8.4 5.7 7.4 6.6 6Z"/><path fill="#fff" d="M16.4 6c.9 1.4 1.4 2.4 1.4 3.3a1.45 1.45 0 1 1-2.9 0c0-.9.6-1.9 1.5-3.3Z"/><path fill="#fff" d="M4 25c0-6.5 5.5-11.5 14-12.2 6.5-.5 11.5.6 15 3.4 2.5-4.4 6.5-8 11.5-9.7-.7 3.5-.3 6.7 1.5 10-3.2 2.7-6.7 3.3-9.4 1.9-.8 6.4-7 12-16.6 12.8C11 31.8 4 29.5 4 25Z"/><path fill="#fff" d="M18 30.6c1.6 3.2 4.4 5.2 7.8 5.6-1.4-3-3.4-5-5.6-6.2-.8.1-1.5.3-2.2.6Z"/><path d="M7.5 27.8c6 2.6 15.5 2.8 22-.6" fill="none" stroke="#C1EBE9" stroke-width="2" stroke-linecap="round"/><circle cx="10.5" cy="21" r="1.6" fill="#0A1628"/></svg></div>
+                  <div class="nm">Whale <span>CWO</span></div>
+                </div>
+                <div class="body">
+                  <h3><a href="/whale-cwo/"><span class="fam">Whale</span> Check Weighing (CWO)</a></h3>
+                  <p class="desc">Software check weighing untuk QC lini produksi: target, toleransi, status lolos/gagal.</p>
+                  <a class="go" href="/whale-cwo/">Lihat detail →</a>
+                </div>
+              </article>
+
+            </div>
+          </div>
+        </div>
+        <noscript><style>.slider .track{flex-wrap:wrap}.slider .mini-card{flex-basis:calc((100% - 40px)/3)}</style></noscript>
       </div>
-      <div class="product-card">
-        <h3>🔌 Integrasi Loadcell</h3>
-        <p>Hubungkan loadcell langsung ke komputer. Support berbagai merk dan protokol komunikasi.</p>
-        <a href="/integrasi-loadcell/">Pelajari Selengkapnya →</a>
+    </section>
+
+    <!-- PERANGKAT TIMBANGAN -->
+    <section class="section section--alt" id="perangkat">
+      <div class="container">
+        <div class="slider-head">
+          <h2 class="section-title">Perangkat Timbangan</h2>
+          <div class="snav" data-snav></div>
+        </div>
+        <div class="slider" data-slider>
+          <div class="viewport">
+            <div class="track">
+
+              <article class="mini-card">
+                <div class="ct">
+                  <svg viewBox="0 0 48 48" fill="none" stroke="#0A1628" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="8" y="10" width="32" height="28" rx="3"/><rect x="13" y="15" width="16" height="8" rx="1.5"/>
+                    <circle cx="35" cy="19" r="1.6" fill="#0A1628"/><circle cx="15" cy="30" r="1.6" fill="#0A1628"/><circle cx="22" cy="30" r="1.6" fill="#0A1628"/><circle cx="29" cy="30" r="1.6" fill="#0A1628"/>
+                  </svg>
+                </div>
+                <div class="body">
+                  <h3>Indikator Timbangan</h3>
+                  <p class="desc">Indikator digital berbagai merk yang kompatibel dengan software Whale.</p>
+                  <a class="go" href="https://wa.me/6281916364503?text=Halo%2C%20saya%20ingin%20tanya%20tentang%20indikator%20timbangan" target="_blank" rel="noopener">Tanya via WA →</a>
+                </div>
+              </article>
+
+              <article class="mini-card">
+                <div class="ct">
+                  <svg viewBox="0 0 48 48" fill="none" stroke="#0A1628" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M24 8v8"/><path d="M14 16h20l3 10H11z"/><path d="M10 40h28"/><path d="M24 26v6"/><path d="M17 40v-4h14v4"/>
+                    <path d="M18 12h12" stroke-width="1.6"/>
+                  </svg>
+                </div>
+                <div class="body">
+                  <h3>Timbangan Meja</h3>
+                  <p class="desc">Timbangan meja/bench scale untuk gudang, produksi, dan pengemasan.</p>
+                  <a class="go" href="https://wa.me/6281916364503?text=Halo%2C%20saya%20ingin%20tanya%20tentang%20timbangan%20meja" target="_blank" rel="noopener">Tanya via WA →</a>
+                </div>
+              </article>
+
+              <article class="mini-card">
+                <div class="ct">
+                  <svg viewBox="0 0 48 48" fill="none" stroke="#0A1628" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M24 7v4"/><circle cx="24" cy="14" r="2.2"/>
+                    <path d="M24 16v14"/><path d="M12 30h24"/>
+                    <path d="M12 30l-4.5 8a3.6 3.6 0 0 0 9 0z"/><path d="M36 30l-4.5 8a3.6 3.6 0 0 0 9 0z"/>
+                    <path d="M10 15l14-3 14 3" stroke-width="1.6"/>
+                  </svg>
+                </div>
+                <div class="body">
+                  <h3>Timbangan Laboratorium</h3>
+                  <p class="desc">Timbangan analitik &amp; presisi untuk laboratorium dan QC.</p>
+                  <a class="go" href="https://wa.me/6281916364503?text=Halo%2C%20saya%20ingin%20tanya%20tentang%20timbangan%20laboratorium" target="_blank" rel="noopener">Tanya via WA →</a>
+                </div>
+              </article>
+
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="product-card">
-        <h3>🖥️ POS Timbangan</h3>
-        <p>Point of Sale dengan timbangan terintegrasi. Cocok untuk toko buah, daging, dan retail.</p>
-        <a href="/pos-timbangan/">Pelajari Selengkapnya →</a>
+    </section>
+
+    <!-- PAKET TIMBANGAN & SOFTWARE -->
+    <section class="section section--tight">
+      <div class="container">
+        <div class="paket">
+          <div>
+            <h2>Paket Timbangan &amp; Software</h2>
+            <p>Kombinasi timbangan + aplikasi pilihan untuk kebutuhan operasional Anda — konsultasikan kebutuhan timbangnya, kami bantu susun paket perangkat dan software yang cocok.</p>
+          </div>
+          <a class="btn btn-wa" href="https://wa.me/6281916364503?text=Halo%2C%20saya%20ingin%20tanya%20tentang%20paket%20timbangan%20dan%20software" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Tanya Paket via WA
+          </a>
+        </div>
       </div>
-      <div class="product-card">
-        <h3>🚛 Software Jembatan Timbang</h3>
-        <p>Kelola penimbangan kendaraan di pabrik dan tambang dengan sistem otomatis dan akurat.</p>
-        <a href="/software-jembatan-timbang/">Pelajari Selengkapnya →</a>
+    </section>
+
+    <!-- KENAPA TIMBANGANPRESISI -->
+    <section class="section section--alt">
+      <div class="container">
+        <h2 class="section-title">Kenapa TimbanganPresisi</h2>
+        <p class="section-lead">Dibangun untuk kebutuhan operasional timbangan di Indonesia: stabil, jujur, dan bisa diandalkan bertahun-tahun.</p>
+        <ul class="feature-list">
+          <li><strong>Koneksi indikator universal</strong><small>Terhubung via Serial/COM ke semua merk indikator — AND, Ohaus, CAS, Mettler Toledo, dan lainnya.</small></li>
+          <li><strong>Berjalan offline di jaringan lokal</strong><small>Operasional timbang tidak tergantung koneksi internet; data tersimpan aman di komputer lokal.</small></li>
+          <li><strong>Tiket timbang dengan audit trail</strong><small>Cetak ulang tiket selalu dibedakan jelas antara ORIGINAL dan COPY.</small></li>
+          <li><strong>Vendor lokal Indonesia</strong><small>Konsultasi dan support dalam Bahasa Indonesia, paham kondisi lapangan pabrik, tambang, dan perkebunan.</small></li>
+        </ul>
       </div>
-      <div class="product-card">
-        <h3>📊 Barcode Timbangan</h3>
-        <p>Cetak label barcode otomatis dari timbangan. Integrasikan dengan sistem inventory Anda.</p>
-        <a href="/barcode-timbangan/">Pelajari Selengkapnya →</a>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Pertanyaan Umum</h2>
+        <div class="faq">
+          <details>
+            <summary>Apa itu software jembatan timbang?</summary>
+            <div class="faq-body">
+              <p>Software yang mengelola penimbangan kendaraan secara digital: mencatat bruto, tara, dan netto otomatis, menyimpan riwayat transaksi, dan mencetak tiket timbang.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Apakah bisa digunakan tanpa internet?</summary>
+            <div class="faq-body">
+              <p>Ya. Semua varian Whale JTO dirancang untuk berjalan di jaringan lokal tanpa koneksi internet — operasional timbang tidak tergantung internet sama sekali.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Merk indikator apa yang didukung?</summary>
+            <div class="faq-body">
+              <p>Semua varian mendukung koneksi universal via Serial/COM — kompatibel dengan AND, Ohaus, CAS, Mettler Toledo, Excell, dan lainnya.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Varian mana yang cocok untuk saya?</summary>
+            <div class="faq-body">
+              <p><strong>Whale JTO Standard</strong> untuk operasional timbang masuk/keluar harian yang fleksibel. <strong>Whale JTO Smart Scanner</strong> untuk volume kendaraan tinggi dengan input barcode. <strong>Whale JTO Multi Item</strong> untuk kendaraan bermuatan campuran. <strong>Whale JTO Pro</strong> untuk skala menengah hingga enterprise dengan dokumentasi CCTV dan dashboard monitoring dari browser. <strong>Whale CWO</strong> untuk check weighing di QC dan packaging line. <strong>Whale POS</strong> untuk toko dan retail berbasis berat dengan kasir terintegrasi timbangan.</p>
+            </div>
+          </details>
+        </div>
       </div>
-      <div class="product-card">
-        <h3>🗄️ Database Penimbangan</h3>
-        <p>Simpan seluruh data penimbangan dalam database terpusat. Akses kapan saja, dari mana saja.</p>
-        <a href="/software-timbangan/">Pelajari Selengkapnya →</a>
+    </section>
+
+    <!-- CTA KONTAK -->
+    <section class="section section--alt">
+      <div class="container">
+        <h2 class="section-title">Butuh software timbangan untuk operasional Anda?</h2>
+        <p class="section-lead">Ceritakan kebutuhan timbangan Anda — kami bantu memilihkan varian yang paling cocok. Konsultasi gratis, tanpa komitmen.</p>
+        <div class="product-card__actions">
+          <a class="btn btn-wa" href="https://wa.me/6281916364503?text=Halo%2C%20saya%20ingin%20konsultasi%20tentang%20software%20timbangan" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Konsultasi Gratis
+          </a>
+          <a class="btn btn-ghost" href="mailto:info@timbanganpresisi.com">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+            info@timbanganpresisi.com
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER — VERBATIM dari template -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="/">Timbangan<span>Presisi</span></a>
+          <p>Software timbangan untuk pabrik, tambang, dan perkebunan Indonesia: jembatan timbang, check weighing, POS timbangan, dan integrasi loadcell.</p>
+        </div>
+        <nav class="footer-col" aria-label="Produk">
+          <h2>Produk</h2>
+          <ul>
+            <li><a href="/jto-pro/">Whale JTO Pro</a></li>
+            <li><a href="/jto-standard/">Whale JTO Standard</a></li>
+            <li><a href="/jto-smart-scanner/">Whale JTO Smart Scanner</a></li>
+            <li><a href="/jto-multi-item/">Whale JTO Multi Item</a></li>
+            <li><a href="/whale-cwo/">Whale CWO</a></li>
+            <li><a href="/pos-timbangan/">Whale POS</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-col" aria-label="Laman">
+          <h2>Laman</h2>
+          <ul>
+            <li><a href="/software-jembatan-timbang/">Jembatan Timbang</a></li>
+            <li><a href="/software-timbangan/">Software Timbangan</a></li>
+            <li><a href="/pos-timbangan/">POS Timbangan</a></li>
+            <li><a href="/barcode-timbangan/">Barcode</a></li>
+            <li><a href="/integrasi-loadcell/">Integrasi Loadcell</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/tentang-kami/">Tentang Kami</a></li>
+          </ul>
+        </nav>
+        <div class="footer-col" id="kontak">
+          <h2>Hubungi Kami</h2>
+          <ul>
+            <li>
+              <a class="footer-contact" href="https://wa.me/6281916364503" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                WA 6281916364503
+              </a>
+            </li>
+            <li>
+              <a class="footer-contact" href="mailto:info@timbanganpresisi.com">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+                info@timbanganpresisi.com
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        © 2026 PT Sentra Solusi Presisi · TimbanganPresisi.com
       </div>
     </div>
-  </div>
-</section>
+  </footer>
 
-<!-- CTA -->
-<section class="cta-section">
-  <h2>Butuh Solusi Penimbangan?</h2>
-  <p>Konsultasikan kebutuhan Anda secara gratis. Tim kami siap membantu.</p>
-  <a class="cta-btn" href="https://wa.me/6281916364503?text=Halo%2C%20saya%20ingin%20konsultasi%20tentang%20software%20timbangan">💬 Hubungi via WhatsApp</a>
-</section>
+  <!-- Tombol WA mengambang — VERBATIM -->
+  <a class="wa-float" href="https://wa.me/6281916364503" target="_blank" rel="noopener" aria-label="Chat WhatsApp">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+  </a>
 
-<!-- FOOTER -->
-<footer class="site-footer">
-  <div class="footer-grid">
-    <div class="footer-col">
-      <h4>TimbanganPresisi</h4>
-      <p>Solusi software timbangan digital terintegrasi untuk industri Indonesia.</p>
-    </div>
-    <div class="footer-col">
-      <h4>Produk</h4>
-      <a href="/software-timbangan/">Software Timbangan</a>
-      <a href="/integrasi-loadcell/">Integrasi Loadcell</a>
-      <a href="/pos-timbangan/">POS Timbangan</a>
-      <a href="/software-jembatan-timbang/">Jembatan Timbang</a>
-      <a href="/barcode-timbangan/">Barcode Timbangan</a>
-    </div>
-    <div class="footer-col">
-      <h4>Industri</h4>
-      <a href="#">Gudang &amp; Logistik</a>
-      <a href="#">Pabrik &amp; Manufaktur</a>
-      <a href="#">Retail &amp; Toko</a>
-      <a href="#">Distributor</a>
-    </div>
-    <div class="footer-col">
-      <h4>Hubungi Kami</h4>
-      <a href="https://wa.me/6281916364503">💬 WhatsApp</a>
-      <a href="mailto:info@timbanganpresisi.com">📧 Email</a>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    © 2025 TimbanganPresisi.com. All rights reserved.
-  </div>
-</footer>
+  <!-- Script nav mobile — VERBATIM di semua halaman -->
+  <script>
+    (function () {
+      var header = document.getElementById('site-header');
+      var toggle = document.getElementById('nav-toggle');
+      toggle.addEventListener('click', function () {
+        var open = header.classList.toggle('nav-open');
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        toggle.setAttribute('aria-label', open ? 'Tutup menu navigasi' : 'Buka menu navigasi');
+      });
+    })();
+  </script>
 
-<!-- WA FLOAT -->
-<a class="wa-float" href="https://wa.me/6281916364503?text=Halo%2C%20saya%20ingin%20konsultasi%20tentang%20software%20timbangan" aria-label="Chat WhatsApp" target="_blank" rel="noopener">💬</a>
+  <!-- Script slider katalog homepage -->
+  <script>
+    document.querySelectorAll('[data-slider]').forEach(function (slider) {
+      var track = slider.querySelector('.track');
+      var section = slider.closest('section');
+      var nav = section ? section.querySelector('[data-snav]') : null;
+      if (!track || !nav) return;
+      nav.innerHTML =
+        '<button class="prev" aria-label="Geser ke kiri"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></button>' +
+        '<button class="next" aria-label="Geser ke kanan"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></button>';
+      var idx = 0;
+      function perView() { return window.innerWidth <= 700 ? 1 : 3; }
+      function maxIdx() { return Math.max(0, track.children.length - perView()); }
+      function go(i) {
+        idx = Math.max(0, Math.min(i, maxIdx()));
+        var w = track.children[0].getBoundingClientRect().width + 20;
+        track.style.transform = 'translateX(' + (-idx * w) + 'px)';
+        nav.querySelector('.prev').disabled = (idx === 0);
+        nav.querySelector('.next').disabled = (idx >= maxIdx());
+      }
+      nav.querySelector('.prev').addEventListener('click', function () { go(idx - perView()); });
+      nav.querySelector('.next').addEventListener('click', function () { go(idx + perView()); });
+      var sx = null;
+      var vp = slider.querySelector('.viewport');
+      vp.addEventListener('touchstart', function (e) { sx = e.touches[0].clientX; }, { passive: true });
+      vp.addEventListener('touchend', function (e) {
+        if (sx === null) return;
+        var dx = e.changedTouches[0].clientX - sx;
+        if (Math.abs(dx) > 40) go(idx + (dx < 0 ? perView() : -perView()));
+        sx = null;
+      }, { passive: true });
+      window.addEventListener('resize', function () { go(idx); });
+      go(0);
+    });
+  </script>
 
-<script>
-document.querySelectorAll('.main-nav a').forEach(function(link) {
-  link.addEventListener('click', function() {
-    document.querySelector('.main-nav').classList.remove('active');
-  });
-});
-</script>
 </body>
 </html>
