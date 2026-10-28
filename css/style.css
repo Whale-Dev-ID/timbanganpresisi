@@ -808,17 +808,6 @@ h1, h2, h3, h4 {
 .hero .panel p { color: #C9D8E2; max-width: 46ch; }
 .hero .panel p strong { color: #fff; }
 .hero .cta { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 6px; }
-.hero .cap {
-  position: absolute;
-  right: 16px;
-  bottom: 16px;
-  background: rgba(10, 22, 40, .82);
-  color: var(--accent);
-  font-size: .78rem;
-  font-weight: 600;
-  padding: 5px 12px;
-  border-radius: 999px;
-}
 .hero .dots {
   position: absolute;
   right: 18px;
@@ -1011,3 +1000,7 @@ h1, h2, h3, h4 {
 /* Logo asli di header & footer */
 .brand { display: inline-flex; align-items: center; gap: 10px; }
 .brand .brand-mark { height: 34px; width: auto; display: block; }
+
+/* Kartu varian SJB: header logo seragam (bukan foto) */
+.product-card__media--logo { display: flex; align-items: center; justify-content: center; }
+.product-card__media--logo img { width: 128px; height: auto; object-fit: contain; }
