@@ -30,6 +30,8 @@
 
 ## Artikel
 
+- [Timbangan Logistik: Panduan Sistem Timbang dari Gudang sampai Serah Terima](https://www.timbanganpresisi.com/blog/timbangan-logistik/): Titik timbang inbound, lantai gudang, dan dispatch, pengendalian muatan berlebih (ODOL), dan peran software agar berat kirim dan terima bisa dibuktikan.
+- [Timbangan Tambang: Panduan Sistem Timbang dari Pit sampai Titik Penjualan](https://www.timbanganpresisi.com/blog/timbangan-tambang/): Titik timbang di pit & stockpile, jembatan timbang penjualan, opsi portabel untuk front yang berpindah, dan rekonsiliasi produksi vs penjualan.
 - [Timbangan Sawit: Panduan Sistem Timbang untuk Kebun & Pabrik Kelapa Sawit](https://www.timbanganpresisi.com/blog/timbangan-sawit/): Titik timbang TBS di kebun, timbangan ram & jembatan timbang di PKS, opsi timbangan portabel, dan peran software untuk laporan inti-plasma.
 - [Cara Memilih Software Timbangan Digital](https://www.timbanganpresisi.com/blog/cara-memilih-software-timbangan-digital/): Panduan fitur wajib dan kompatibilitas sebelum membeli software timbangan.
 - [Integrasi Timbangan ke Komputer](https://www.timbanganpresisi.com/blog/integrasi-timbangan-ke-komputer/): Panduan RS232, USB, dan TCP/IP untuk menghubungkan timbangan ke komputer.

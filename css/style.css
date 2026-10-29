@@ -350,6 +350,23 @@ h1, h2, h3, h4 {
   max-width: 70ch;
 }
 
+/* Kepala halaman dua kolom: teks + visual (mis. /software-timbangan/) */
+.head-split {
+  display: grid;
+  grid-template-columns: 1.02fr .98fr;
+  gap: 3rem;
+  align-items: center;
+}
+.head-split__media img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 920px) {
+  .head-split { grid-template-columns: 1fr; gap: 1.75rem; }
+  .head-split__media { max-width: 600px; }
+}
+
 /* ---------- 7. KARTU PRODUK ---------- */
 .product-grid {
   display: grid;
