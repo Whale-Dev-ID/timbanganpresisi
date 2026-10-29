@@ -126,6 +126,21 @@
     <!-- Tampilan aplikasi: screenshot belum tersedia -->
 
     <!-- Fitur utama -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Lihat Cara Kerjanya</h2>
+        <p class="lead">Video penjelasan Whale JTO Multi Item: banyak item dalam satu transaksi, dimuat bertahap, direkap dalam satu printout.</p>
+        <div class="video-box" data-video="/video/whale-jto-multi-item.mp4">
+          <img class="vposter" src="/img/video-poster-multi-item.jpg" alt="Cuplikan video penjelasan Whale JTO Multi Item" loading="lazy">
+          <button class="vplay" type="button" aria-label="Putar video penjelasan Whale JTO Multi Item">
+            <span class="vbtn"><svg viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg></span>
+            <span class="vlabel">Putar Video</span>
+          </button>
+          <span class="vdur">1:06</span>
+        </div>
+      </div>
+    </section>
+
     <section class="section section--alt">
       <div class="container">
         <h2 class="section-title">Fitur Utama</h2>
@@ -214,6 +229,7 @@
             <li><a href="/jto-multi-item/">Whale JTO Multi Item</a></li>
             <li><a href="/whale-cwo/">Whale CWO</a></li>
             <li><a href="/pos-timbangan/">Whale POS</a></li>
+            <li><a href="/whale-pos-inventory/">Whale POS Inventory</a></li>
           </ul>
         </nav>
         <nav class="footer-col" aria-label="Laman">
@@ -270,5 +286,18 @@
     })();
   </script>
 
+
+<script>
+document.querySelectorAll('.video-box').forEach(function (box) {
+  var btn = box.querySelector('.vplay');
+  if (!btn) return;
+  btn.addEventListener('click', function () {
+    var v = document.createElement('video');
+    v.src = box.getAttribute('data-video');
+    v.controls = true; v.autoplay = true; v.playsInline = true;
+    box.innerHTML = ''; box.appendChild(v);
+  });
+});
+</script>
 </body>
 </html>
