@@ -13,6 +13,11 @@
 - [Whale POS Inventory](https://www.timbanganpresisi.com/whale-pos-inventory/): Aplikasi stok gudang pasangan Whale POS — kelola produk, supplier, dan barang masuk (kg) dengan timbangan terhubung, tersinkron otomatis ke kasir.
 - [Whale POS Android](https://www.timbanganpresisi.com/whale-pos-android/): Versi Android dari Whale POS — kasir timbangan dikendalikan dari HP, terhubung ke timbangan via Bluetooth, tanpa PC kasir.
 - [Whale CWO Android](https://www.timbanganpresisi.com/whale-cwo-android/): Versi Android dari Whale CWO — check weighing dari HP via Bluetooth: target, toleransi, status PASS/UNDER/OVER, tanpa komputer industri.
+- [Whale BatchWeigh Android](https://www.timbanganpresisi.com/whale-batchweigh-android/): Aplikasi Android untuk menimbang berurutan per sesi supplier dari HP via Bluetooth: berat stabil tersimpan otomatis dengan bunyi tit, nomor batch otomatis, statistik langsung, laporan per sesi export Excel & CSV.
+- Whale Count Android — /whale-count-android/ — Aplikasi counting timbangan Android: jumlah pcs terhitung dari berat per pcs (Timbang Sample), operator & shift otomatis, lot & nomor bag, cetak label, export Excel/CSV.
+- [Whale JTO Standard Android](https://www.timbanganpresisi.com/jto-standard-android/): Versi Android dari Whale JTO Standard — jembatan timbang dari HP via Bluetooth: dua kali timbang, netto otomatis, tiket dan laporan dari HP.
+- [Whale JTO SmartScan Android](https://www.timbanganpresisi.com/jto-smartscan-android/): Versi Android dari Whale JTO Smart Scanner — barcode kendaraan discan pakai kamera HP, data langsung terpanggil, tanpa scanner tambahan.
+- [Whale JTO MultiItem Android](https://www.timbanganpresisi.com/jto-multiitem-android/): Versi Android dari Whale JTO Multi Item — muatan campuran banyak item satu transaksi dari HP, netto per item otomatis, harga per kg, rekap satu tiket.
 
 ## Perangkat Timbangan
 

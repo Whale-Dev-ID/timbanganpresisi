@@ -1021,3 +1021,21 @@ h1, h2, h3, h4 {
 /* Kartu varian SJB: header logo seragam (bukan foto) */
 .product-card__media--logo { display: flex; align-items: center; justify-content: center; }
 .product-card__media--logo img { width: 128px; height: auto; object-fit: contain; }
+
+/* Galeri HP (halaman Android) */
+.phone-row{display:flex;flex-wrap:wrap;gap:24px;justify-content:center;margin-top:30px}
+.phone-row figure{margin:0;width:min(215px,42vw);text-align:center}
+.phone-row img{width:100%;height:auto;border-radius:20px}
+.phone-row figcaption{margin-top:8px;font-size:13.5px;opacity:.75}
+
+/* Lightbox gambar HP (halaman Android) */
+.zoomable{cursor:zoom-in}
+.lb{position:fixed;inset:0;z-index:200;background:rgba(10,22,40,.94);display:flex;align-items:center;justify-content:center}
+.lb[hidden]{display:none}
+.lb figure{margin:0;text-align:center;max-width:94vw}
+.lb figure img{max-height:86vh;max-width:94vw;width:auto;height:auto;border-radius:18px;box-shadow:0 24px 60px rgba(0,0,0,.5)}
+.lb figcaption{color:#D9F1EF;margin-top:12px;font-size:15px;padding:0 12px}
+.lb button{position:absolute;background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.35);width:46px;height:46px;border-radius:50%;font-size:26px;line-height:1;cursor:pointer;z-index:2}
+.lb .lb-close{top:16px;right:16px}
+.lb .lb-prev{left:12px;top:50%;transform:translateY(-50%)}
+.lb .lb-next{right:12px;top:50%;transform:translateY(-50%)}

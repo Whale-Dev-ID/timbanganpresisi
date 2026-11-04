@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Whale BatchWeigh Android — Timbang Batch dari HP | TimbanganPresisi.com</title>
+  <meta name="description" content="Whale BatchWeigh Android: aplikasi penimbangan berurutan dari HP. Satu sesi per supplier, berat stabil tersimpan otomatis dengan bunyi tit, statistik langsung, laporan per sesi export Excel & CSV, via Bluetooth.">
+  <link rel="canonical" href="https://www.timbanganpresisi.com/whale-batchweigh-android/">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="TimbanganPresisi.com">
+  <meta property="og:title" content="Whale BatchWeigh Android — Timbang Batch dari HP">
+  <meta property="og:description" content="Nimbang terus, tercatat terus: menimbang berurutan per sesi supplier dari HP — auto-save saat stabil, nomor batch otomatis, rekap Excel & CSV.">
+  <meta property="og:url" content="https://www.timbanganpresisi.com/whale-batchweigh-android/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32.png">
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Product","name":"Whale BatchWeigh Android","description":"Aplikasi Android untuk penimbangan berurutan per supplier (per sesi): auto-save berat stabil, nomor batch otomatis, statistik langsung, dan laporan per sesi (Excel/CSV), terhubung timbangan via Bluetooth.","brand":{"@type":"Brand","name":"Whale"},"operatingSystem":"Android"}
+  </script>
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Apa yang dimaksud satu sesi penimbangan?", "acceptedAnswer": {"@type": "Answer", "text": "Satu sesi penimbangan untuk satu supplier dan satu barang, berisi banyak timbangan berurutan di bawah satu nomor batch. Cocok untuk pola seperti menimbang ayam dari satu peternak atau hasil bumi dari satu pengepul sampai selesai, lalu pindah ke supplier berikutnya dengan sesi baru."}}, {"@type": "Question", "name": "Apakah saya harus menekan tombol setiap selesai menimbang?", "acceptedAnswer": {"@type": "Answer", "text": "Tidak. Berat yang sudah stabil tersimpan otomatis dan berbunyi tit sebagai tanda. Operator cukup menaikkan dan menurunkan barang — aplikasi yang mencatat, menjumlah, dan menghitung rata-ratanya."}}, {"@type": "Question", "name": "Bagaimana kalau ada timbangan yang salah?", "acceptedAnswer": {"@type": "Answer", "text": "Timbangan terakhir bisa dihapus dari sesi yang sedang berjalan. Sesi aktif juga tersimpan aman — kalau aplikasi tertutup atau HP restart di tengah sesi, sesinya bisa dilanjutkan."}}, {"@type": "Question", "name": "Apa bedanya dengan Whale CWO Android?", "acceptedAnswer": {"@type": "Answer", "text": "Whale CWO Android menilai kualitas: setiap timbangan dibandingkan ke target dan diberi status PASS, UNDER, atau OVER. Whale BatchWeigh tidak menilai — ia mencatat banyak timbangan per sesi supplier dan merekap total serta rata-ratanya. Keduanya terhubung ke timbangan lewat Bluetooth."}}, {"@type": "Question", "name": "Bisakah laporannya diekspor?", "acceptedAnswer": {"@type": "Answer", "text": "Ya. Laporan per sesi dapat difilter menurut tanggal dan dicari menurut nomor batch, supplier, atau barang, lalu diekspor ke Excel atau CSV. Ringkasan satu sesi juga bisa dicetak ke printer thermal atau disimpan sebagai gambar."}}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Beranda","item":"https://www.timbanganpresisi.com/"},{"@type":"ListItem","position":2,"name":"Software Timbangan","item":"https://www.timbanganpresisi.com/software-timbangan/"},{"@type":"ListItem","position":3,"name":"Whale BatchWeigh Android","item":"https://www.timbanganpresisi.com/whale-batchweigh-android/"}]}
+  </script>
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Lewati ke konten utama</a>
+
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a class="brand" href="/"><img class="brand-mark" src="/img/logo-mark.png" alt="" width="46" height="34">Timbangan<span>Presisi</span></a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Buka menu navigasi">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Navigasi utama">
+        <a href="/software-timbangan/">Software Timbangan</a>
+        <a href="/#perangkat">Perangkat Timbangan</a>
+        <a href="/blog/">Blog</a>
+        <a href="/tentang-kami/">About Us</a>
+        <a class="btn btn-wa btn-sm" href="https://wa.me/6281916364503" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          Konsultasi Gratis
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <div class="page-head">
+      <div class="container">
+        <h1>Whale BatchWeigh Android — Nimbang Terus, Tercatat Terus</h1>
+        <p>Aplikasi penimbangan berurutan untuk HP Android: satu sesi untuk satu supplier, dan setiap berat yang stabil tersimpan otomatis satu per satu — rekapnya jadi sendiri. Terhubung ke timbangan lewat Bluetooth, tanpa catat kertas dan tanpa hitung kalkulator.</p>
+        <p>
+          <a class="btn btn-wa" href="https://wa.me/6281916364503?text=Halo%2C%20saya%20tertarik%20dengan%20Whale%20BatchWeigh%20Android" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            Tanya via WhatsApp
+          </a>
+        </p>
+        <p>
+          <span class="badge">Auto-save saat berat stabil</span>
+          <span class="badge">Bunyi "tit" tiap tersimpan</span>
+          <span class="badge">Nomor batch otomatis</span>
+          <span class="badge">Export Excel &amp; CSV</span>
+        </p>
+      </div>
+    </div>
+
+    <section class="section section--tight">
+      <div class="container">
+        <div class="video-box" data-video="/video/whale-batchweigh-android.mp4">
+          <img class="vposter" src="/img/video-poster-batchweigh-android.jpg" alt="Cuplikan video penjelasan Whale BatchWeigh Android" loading="lazy">
+          <button class="vplay" type="button" aria-label="Putar Cuplikan video penjelasan Whale BatchWeigh Android">
+            <span class="vbtn"><svg viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg></span>
+            <span class="vlabel">Putar Video</span>
+          </button>
+          <span class="vdur">0:49</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <div class="container" style="display:flex;flex-direction:column;align-items:center;">
+        <img class="zoomable" data-cap="Tab Timbang: berat live, sesi berjalan, jumlah, total &amp; rata-rata bergerak terus." src="/img/app/batchweigh-android-1.jpg" alt="Layar Timbang Whale BatchWeigh Android — sesi berjalan dan daftar hasil timbang" width="1520" height="1960" style="width:min(340px,86vw);height:auto;border-radius:24px;">
+        <p style="margin-top:12px;font-size:14px;opacity:.75;">Tab Timbang: berat live, sesi berjalan, jumlah, total &amp; rata-rata bergerak terus.</p>
+        <div class="phone-row">
+          <figure><img class="zoomable" data-cap="Master Supplier &amp; Barang tersimpan di HP — tinggal pilih saat mulai sesi." src="/img/app/batchweigh-android-2.jpg" alt="Tab Data Whale BatchWeigh Android — master supplier dan barang" loading="lazy"><figcaption>Master Supplier &amp; Barang tersimpan di HP — tinggal pilih saat mulai sesi.</figcaption></figure>
+          <figure><img class="zoomable" data-cap="Laporan per sesi: filter tanggal, cari, lalu export ke Excel atau CSV." src="/img/app/batchweigh-android-3.jpg" alt="Tab Laporan Whale BatchWeigh Android — daftar batch dan export" loading="lazy"><figcaption>Laporan per sesi: filter tanggal, cari, lalu export ke Excel atau CSV.</figcaption></figure>
+          <figure><img class="zoomable" data-cap="Pengaturan Batch: format nomor, lama stabil, toleransi &amp; bunyi tit bisa diatur." src="/img/app/batchweigh-android-4.jpg" alt="Tab Pengaturan Whale BatchWeigh Android — pengaturan batch" loading="lazy"><figcaption>Pengaturan Batch: format nomor, lama stabil, toleransi &amp; bunyi tit bisa diatur.</figcaption></figure>
+        </div>
+        <p style="margin-top:16px;font-size:13.5px;opacity:.65;">Ketuk gambar untuk memperbesar.</p>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container">
+        <h2 class="section-title">Yang Bikin Capek Itu Mencatatnya, Bukan Menimbangnya</h2>
+        <div class="prose">
+          <p>Menimbang satu per satu untuk satu supplier — ayam dari satu peternak, hasil bumi dari satu pengepul — pekerjaannya sebenarnya cepat. Yang lambat adalah mencatatnya: tulis di kertas, jumlahkan pakai kalkulator, lalu pindahkan lagi ke komputer. Di situlah salah hitung dan catatan hilang biasanya terjadi.</p>
+          <p>Whale BatchWeigh membalik bebannya ke aplikasi: <strong>(1)</strong> mulai sesi dan pilih supplier serta barangnya — nomor batch terbit otomatis; <strong>(2)</strong> timbang seperti biasa, setiap berat yang stabil tersimpan sendiri disertai bunyi "tit"; <strong>(3)</strong> akhiri batch, dan ringkasan beserta laporannya sudah jadi.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Fitur Whale BatchWeigh Android</h2>
+        <ul class="feature-list">
+          <li><strong>Auto-Save saat Stabil</strong><small>Berat yang diam dalam toleransi tersimpan sendiri — tanpa menekan tombol apa pun. Lama stabil bisa diatur sampai ketelitian 0,1 detik.</small></li>
+          <li><strong>Bunyi "Tit" Tanda Tersimpan</strong><small>Setiap timbangan yang tersimpan berbunyi tit — operator fokus ke timbangan dan barang, tidak perlu menatap layar HP.</small></li>
+          <li><strong>Nomor Batch Otomatis</strong><small>Format nomor dapat diatur mengikuti tanggal dan nomor urut, seperti nomor tiket — setiap sesi supplier punya nomornya sendiri.</small></li>
+          <li><strong>Statistik Langsung</strong><small>Jumlah timbangan, total berat, dan rata-rata terhitung langsung selama sesi berjalan — rata-rata tampil rapi dua angka di belakang koma.</small></li>
+          <li><strong>Hapus Terakhir &amp; Tahan Restart</strong><small>Timbangan terakhir yang salah bisa dibatalkan. Sesi yang sedang berjalan tidak hilang walau aplikasi tertutup atau HP restart.</small></li>
+          <li><strong>Laporan &amp; Export</strong><small>Riwayat per sesi dapat difilter dan dicari, lalu diekspor ke Excel atau CSV. Ringkasan sesi juga bisa dicetak atau disimpan sebagai gambar.</small></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container">
+        <h2 class="section-title">Cocok untuk</h2>
+        <p>
+          <span class="badge">Pengepul &amp; Peternak Ayam</span>
+          <span class="badge">Penimbangan Supplier</span>
+          <span class="badge">Hasil Bumi &amp; Pertanian</span>
+          <span class="badge">Perikanan</span>
+          <span class="badge">Penerimaan Gudang</span>
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Pasangan Perangkatnya</h2>
+        <div class="prose">
+          <p>Pasangan yang kami sediakan adalah <strong><a href="/timbangan-digital-alexa/">timbangan digital indikator Alexa</a></strong> — indikator dengan Bluetooth bawaan, tersedia sebagai set timbangan duduk (30–150 kg) dan lantai (150 kg–3 ton), garansi 1 tahun. Berat terbaca di HP lewat Bluetooth, dan Whale BatchWeigh yang mencatat setiap timbangannya.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Juga Tersedia: Whale Count Android</h2>
+        <div class="prose">
+          <p>Kalau yang dicari bukan total berat melainkan <strong>jumlah isinya</strong> — satu bag baut isinya berapa pcs, satu wadah mur jumlahnya berapa — pasangannya adalah <strong>Whale Count Android</strong>. Timbang contohnya untuk berat per pcs, lalu setiap timbangan terbaca jumlahnya besar-besar, lengkap dengan operator, shift, lot, dan cetak label.</p>
+        </div>
+        <p style="margin-top:18px;">
+          <a class="btn btn-ghost" href="/whale-count-android/">Lihat Whale Count Android</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container">
+        <h2 class="section-title">FAQ - Pertanyaan Umum</h2>
+        <div class="faq">
+          <details>
+            <summary>Apa yang dimaksud satu sesi penimbangan?</summary>
+            <div class="faq-body">
+              <p>Satu sesi penimbangan untuk satu supplier dan satu barang, berisi banyak timbangan berurutan di bawah satu nomor batch. Cocok untuk pola seperti menimbang ayam dari satu peternak atau hasil bumi dari satu pengepul sampai selesai, lalu pindah ke supplier berikutnya dengan sesi baru.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Apakah saya harus menekan tombol setiap selesai menimbang?</summary>
+            <div class="faq-body">
+              <p>Tidak. Berat yang sudah stabil tersimpan otomatis dan berbunyi "tit" sebagai tanda. Operator cukup menaikkan dan menurunkan barang — aplikasi yang mencatat, menjumlah, dan menghitung rata-ratanya.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Bagaimana kalau ada timbangan yang salah?</summary>
+            <div class="faq-body">
+              <p>Timbangan terakhir bisa dihapus dari sesi yang sedang berjalan. Sesi aktif juga tersimpan aman — kalau aplikasi tertutup atau HP restart di tengah sesi, sesinya bisa dilanjutkan.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Apa bedanya dengan Whale CWO Android?</summary>
+            <div class="faq-body">
+              <p>Whale CWO Android menilai kualitas: setiap timbangan dibandingkan ke target dan diberi status PASS, UNDER, atau OVER. Whale BatchWeigh tidak menilai — ia mencatat banyak timbangan per sesi supplier dan merekap total serta rata-ratanya. Keduanya terhubung ke timbangan lewat Bluetooth.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Bisakah laporannya diekspor?</summary>
+            <div class="faq-body">
+              <p>Ya. Laporan per sesi dapat difilter menurut tanggal dan dicari menurut nomor batch, supplier, atau barang, lalu diekspor ke Excel atau CSV. Ringkasan satu sesi juga bisa dicetak ke printer thermal atau disimpan sebagai gambar.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Tertarik dengan Whale BatchWeigh?</h2>
+        <p class="section-lead">Ceritakan pola penimbangan di tempat Anda — per supplier, per hari, atau per kiriman — kami bantu nilai kecocokannya.</p>
+        <a class="btn btn-wa" href="https://wa.me/6281916364503?text=Halo%2C%20saya%20ingin%20tanya%20tentang%20Whale%20BatchWeigh%20Android" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            Tanya via WhatsApp
+          </a>
+        <a class="btn btn-ghost" href="/whale-cwo-android/">Lihat Whale CWO Android</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="/"><img class="brand-mark" src="/img/logo-mark.png" alt="" width="46" height="34">Timbangan<span>Presisi</span></a>
+          <p>Software timbangan untuk pabrik, tambang, dan perkebunan Indonesia: jembatan timbang, check weighing, POS timbangan, dan integrasi loadcell.</p>
+        </div>
+        <nav class="footer-col" aria-label="Produk">
+          <h2>Produk</h2>
+          <ul>
+            <li><a href="/jto-pro/">Whale JTO Pro</a></li>
+            <li><a href="/jto-standard/">Whale JTO Standard</a></li>
+            <li><a href="/jto-standard-android/">Whale JTO Standard Android</a></li>
+            <li><a href="/jto-smart-scanner/">Whale JTO Smart Scanner</a></li>
+            <li><a href="/jto-smartscan-android/">Whale JTO SmartScan Android</a></li>
+            <li><a href="/jto-multi-item/">Whale JTO Multi Item</a></li>
+            <li><a href="/jto-multiitem-android/">Whale JTO MultiItem Android</a></li>
+            <li><a href="/whale-cwo/">Whale CWO</a></li>
+            <li><a href="/whale-cwo-android/">Whale CWO Android</a></li>
+            <li><a href="/whale-batchweigh-android/">Whale BatchWeigh Android</a></li>
+            <li><a href="/whale-count-android/">Whale Count Android</a></li>
+            <li><a href="/pos-timbangan/">Whale POS</a></li>
+            <li><a href="/whale-pos-inventory/">Whale POS Inventory</a></li>
+            <li><a href="/whale-pos-android/">Whale POS Android</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-col" aria-label="Laman">
+          <h2>Laman</h2>
+          <ul>
+            <li><a href="/software-jembatan-timbang/">Jembatan Timbang</a></li>
+            <li><a href="/software-timbangan/">Software Timbangan</a></li>
+            <li><a href="/pos-timbangan/">POS Timbangan</a></li>
+            <li><a href="/barcode-timbangan/">Barcode</a></li>
+            <li><a href="/integrasi-loadcell/">Integrasi Loadcell</a></li>
+            <li><a href="/blog/">Blog</a>
+        <a href="/tentang-kami/">About Us</a></li>
+          </ul>
+        </nav>
+        <div class="footer-col" id="kontak">
+          <h2>Hubungi Kami</h2>
+          <ul>
+            <li>
+              <a class="footer-contact" href="https://wa.me/6281916364503" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                WA 6281916364503
+              </a>
+            </li>
+            <li>
+              <a class="footer-contact" href="mailto:info@timbanganpresisi.com">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+                info@timbanganpresisi.com
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        © 2026 PT Sentra Solusi Presisi · TimbanganPresisi.com
+      </div>
+    </div>
+  </footer>
+
+  <a class="wa-float" href="https://wa.me/6281916364503" target="_blank" rel="noopener" aria-label="Chat WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+  </a>
+
+  <script>
+    (function () {
+      var header = document.getElementById('site-header');
+      var toggle = document.getElementById('nav-toggle');
+      toggle.addEventListener('click', function () {
+        var open = header.classList.toggle('nav-open');
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        toggle.setAttribute('aria-label', open ? 'Tutup menu navigasi' : 'Buka menu navigasi');
+      });
+    })();
+  </script>
+
+
+<script>
+document.querySelectorAll('.video-box').forEach(function (box) {
+  var btn = box.querySelector('.vplay');
+  if (!btn) return;
+  btn.addEventListener('click', function () {
+    var v = document.createElement('video');
+    v.src = box.getAttribute('data-video');
+    v.controls = true; v.autoplay = true; v.playsInline = true;
+    box.innerHTML = ''; box.appendChild(v);
+  });
+});
+</script>
+
+  <div class="lb" id="lightbox" hidden role="dialog" aria-label="Gambar diperbesar">
+    <button class="lb-close" type="button" aria-label="Tutup">&times;</button>
+    <button class="lb-prev" type="button" aria-label="Gambar sebelumnya">&#8249;</button>
+    <figure>
+      <img id="lb-img" src="" alt="">
+      <figcaption id="lb-cap"></figcaption>
+    </figure>
+    <button class="lb-next" type="button" aria-label="Gambar berikutnya">&#8250;</button>
+  </div>
+
+<script>
+(function () {
+  var imgs = Array.prototype.slice.call(document.querySelectorAll('img.zoomable'));
+  if (!imgs.length) return;
+  var lb = document.getElementById('lightbox');
+  var lbImg = document.getElementById('lb-img');
+  var lbCap = document.getElementById('lb-cap');
+  var idx = 0;
+  function show(i) {
+    idx = (i + imgs.length) % imgs.length;
+    lbImg.src = imgs[idx].src;
+    lbImg.alt = imgs[idx].alt;
+    lbCap.textContent = imgs[idx].getAttribute('data-cap') || imgs[idx].alt;
+  }
+  function open(i) { show(i); lb.hidden = false; document.body.style.overflow = 'hidden'; }
+  function close() { lb.hidden = true; document.body.style.overflow = ''; }
+  imgs.forEach(function (im, i) { im.addEventListener('click', function () { open(i); }); });
+  lb.querySelector('.lb-close').addEventListener('click', close);
+  lb.querySelector('.lb-prev').addEventListener('click', function (e) { e.stopPropagation(); show(idx - 1); });
+  lb.querySelector('.lb-next').addEventListener('click', function (e) { e.stopPropagation(); show(idx + 1); });
+  lb.addEventListener('click', function (e) { if (e.target === lb) close(); });
+  document.addEventListener('keydown', function (e) {
+    if (lb.hidden) return;
+    if (e.key === 'Escape') close();
+    if (e.key === 'ArrowLeft') show(idx - 1);
+    if (e.key === 'ArrowRight') show(idx + 1);
+  });
+  var tx = null;
+  lb.addEventListener('touchstart', function (e) { tx = e.changedTouches[0].clientX; }, { passive: true });
+  lb.addEventListener('touchend', function (e) {
+    if (tx === null) return;
+    var dx = e.changedTouches[0].clientX - tx;
+    if (Math.abs(dx) > 40) show(idx + (dx < 0 ? 1 : -1));
+    tx = null;
+  }, { passive: true });
+})();
+</script>
+</body>
+</html>
+
+</html>
